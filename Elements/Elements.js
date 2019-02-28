@@ -606,22 +606,22 @@ function runEvent(eventId) {
 			document.getElementById("machine3").style.display="";
 			unlockedMachines++;
 			
-			document.getElementById("machineProductInfo0").innerHTML="5 Water";
-			document.getElementById("machineProductInfo1").innerHTML="5 Air";
-			document.getElementById("machineProductInfo2").innerHTML="5 Fire";
-			document.getElementById("machineProductInfo3").innerHTML="5 Earth";
+			document.getElementById("machineProductInfo0").innerHTML="5 水";
+			document.getElementById("machineProductInfo1").innerHTML="5 空气";
+			document.getElementById("machineProductInfo2").innerHTML="5 火";
+			document.getElementById("machineProductInfo3").innerHTML="5 地球";
 			break;
 		case "upgradeBought14":
-			document.getElementById("machineProductInfo0").innerHTML="6 Water";
-			document.getElementById("machineProductInfo1").innerHTML="6 Air";
-			document.getElementById("machineProductInfo2").innerHTML="6 Fire";
-			document.getElementById("machineProductInfo3").innerHTML="6 Earth";
+			document.getElementById("machineProductInfo0").innerHTML="6 水";
+			document.getElementById("machineProductInfo1").innerHTML="6 空气";
+			document.getElementById("machineProductInfo2").innerHTML="6 火";
+			document.getElementById("machineProductInfo3").innerHTML="6 地球";
 			break;
 		case "upgradeBought16":
-			document.getElementById("machineProductInfo0").innerHTML="8 Water";
-			document.getElementById("machineProductInfo1").innerHTML="8 Air";
-			document.getElementById("machineProductInfo2").innerHTML="8 Fire";
-			document.getElementById("machineProductInfo3").innerHTML="8 Earth";
+			document.getElementById("machineProductInfo0").innerHTML="8 水";
+			document.getElementById("machineProductInfo1").innerHTML="8 空气";
+			document.getElementById("machineProductInfo2").innerHTML="8 火";
+			document.getElementById("machineProductInfo3").innerHTML="8 地球";
 			break;
 		case "upgradeBought24":
 			sendMessageJSON("upgradeBought24");
