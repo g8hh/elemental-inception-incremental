@@ -188,9 +188,9 @@ var jsonMessages = {
 	},
 	"intro0" : {
 		"flush" : true,
-		"loreText" : "Welcome to prototype of \"I didn't decide on the name yet Elements\".<br><br>Currently only stage 1 is available, which is just and something bigger than just tutorial and something smaller than what in incremental would be called \"road to first reset\".<br><br>I'd love to hear any feedback from you, either as a comment in game's post, direct message or email.<br><br>If you leave game in inactive window it'll accumulate time, which will then be used up to 3x the speed of gameplay.",
+		"loreText" : "欢迎来到 \"我还没有决定元素的名称\".<br><br>目前只有阶段一是可用的，它只是和一些比教程更大的东西和一些比增量将被称为“第一次复位\之路”\小的东西。<br><br>我很乐意听到你的任何反馈，无论是游戏的帖子、直接消息还是电子邮件中的评论。<br><br>如果你将游戏留在非活动窗口，它将积累时间，然后用以使用高达3倍的游戏速度。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Press Proceed to continue",
+		"gameplayText" : "点击继续按钮以继续",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -201,9 +201,9 @@ var jsonMessages = {
 	},
 	"intro1" : {
 		"flush" : true,
-		"loreText" : "A few words about this message box: when something appears here it'll usually freeze gameplay.<br><br>This box usually contains lore, while the small box below will contain a gameplay tip or action that is activated with the button.",
+		"loreText" : "关于这个消息框我想说几句:当有东西出现在这里时，它通常会冻结游戏玩法。<br/><br/>此框通常包含知识，而下方的小框将包含游戏玩法提示或通过按钮激活的动作。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Sometimes after pressing the button you'll have to wait for action to complete.",
+		"gameplayText" : "有时在按下按钮之后，您必须等待操作完成。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -218,14 +218,14 @@ var jsonMessages = {
 	},
 	"intro2" : {
 		"flush" : true,
-		"loreText" : "Every message is copied into your personal Log. You can re-read everything at your leisure there.<br><br>Alright, it's time to begin with the real story.",
+		"loreText" : "每条消息都被复制到您的个人日志中。在那里你可以在空闲时重读所有的东西。<br/>好了，是时候开始讲真实的故事了。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Other times you'll have to first wait, and then press button to continue story.",
+		"gameplayText" : "其他时候你得先等一下，然后按下按钮继续讲故事。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "progressBar",
 		"progressBar" : {
-			"barText": "Loading Intro cutscene...",
+			"barText": "加载介绍场景...",
 			"duration": 2000
 		},
 		"buttonAvailable": true,
@@ -235,9 +235,9 @@ var jsonMessages = {
 	},
 	"intro3" : {
 		"flush" : true,
-		"loreText" : "My mentor told me a story about Elements.<br><br>Legend tells that there was a wise Alchemist that mastered all the fundamentals of the world as we know it.",
+		"loreText" : "我的导师给我讲了一个关于元素的故事。<br/><br/>传说有一位聪明的炼金术士，他精通我们所知的世界的所有基本知识。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Text can also dissapear in almost animated way.",
+		"gameplayText" : "文本也可以以动画的方式消失。",
 		"gameplayFreezeDuration": 500,
 		
 		"firstActiveElement" : "button",
@@ -248,7 +248,7 @@ var jsonMessages = {
 	},
 	"intro4" : {
 		"flush" : true,
-		"loreText" : "He was able to control all elements and produce mountains of gold, change properties of matter and much more. <br><br>\"Eh, fairy tales...\" - that's what I would usually say.",
+		"loreText" : "他能够控制所有的元素并产生堆积如山的黄金，改变物质的性质等等。<br> <br> “呃,童话故事…”这是我通常说的。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -261,7 +261,7 @@ var jsonMessages = {
 	},
 	"intro5" : {
 		"flush" : true,
-		"loreText" : "But now that my father has fallen deathly ill, that story has become my last hope.",
+		"loreText" : "但现在我父亲已经病倒了，这是我最后的希望了。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -274,7 +274,7 @@ var jsonMessages = {
 	},
 	"intro6" : {
 		"flush" : true,
-		"loreText" : "I don't want to become god. Well, I would like to if possible.<br><br> But I just want to try researching the mystic art of the Elements. Maybe they will lead me to the discovery of an unknown medicine that could help my father.",
+		"loreText" : "我不想成为上帝。如果可能的话，我想去。<br><br>但我只是想尝试研究元素的神秘艺术。也许他们会引导我发现一种未知的药物，可以帮助我的父亲。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -287,7 +287,7 @@ var jsonMessages = {
 	},
 	"intro7" : {
 		"flush" : true,
-		"loreText" : "Scholars give him no more than a month.<br><br>So I don't have too much time. Armed with a lot of motivation I made my way towards the * Library.",
+		"loreText" : "学者们只给他一个月的时间。<br><br>时间不多了。带着极大的动力，我朝图书馆走去。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -300,7 +300,7 @@ var jsonMessages = {
 	},
 	"intro8" : {
 		"flush" : true,
-		"loreText" : "Legend tells that knowledge possessed by Alchemist came from combining four Elements together.<br><br>So I'm going to learn Elemental manipulation. For most it's just like a hobby. Most \"Elementalists\", as they like to call themselves, just sit in their little playgrounds and create floating lamps, or other decorative baubles",
+		"loreText" : "传说炼金术士拥有的知识来自于四种元素的结合。<br><br>我要学习元素操作。对大多数人来说，这只是一种爱好。大多数“元素主义者”，就像他们喜欢称呼自己的那样，只是坐在他们的小操场上，创造漂浮的灯或者其他装饰性的小玩意",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -313,14 +313,14 @@ var jsonMessages = {
 	},
 	"intro9" : {
 		"flush" : true,
-		"loreText" : "After few days of reading about it in library, I began to understand the basics. All you need to do begin experimenting is an Elemental Glove.",
+		"loreText" : "在图书馆读了几天之后，我开始了解它的基础知识。你所需要做的一切开始实验是一个基本的手套。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Begin your search",
+		"gameplayText" : "开始你的搜索",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "Searching nearby shops. It shouldn't be too hard to find.",
+			"barText": "搜索附近的商店。应该不难找到。",
 			"duration": 5000
 		},
 		"buttonAvailable": true,
@@ -330,7 +330,7 @@ var jsonMessages = {
 	},
 	"intro10" : {
 		"flush" : true,
-		"loreText" : "I found Glove at affordable price in toy store. People don't think highly of them. I hope that I'll be able to use it better than most.<br><br>By itself the Glove is quite limited though.",
+		"loreText" : "我在玩具店找到了物美价廉的手套。人们对他们评价不高。我希望我能比大多数人更好地使用它。<br><br>手套本身是很有限的。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -343,9 +343,9 @@ var jsonMessages = {
 	},
 	"intro11" : {
 		"flush" : true,
-		"loreText" : "So I'll need other components. They are called Elemental Orbs. Elements can't hold their form without dedicated containers. An additional benefit of Orbs are their safety. Thanks to small crystal inside Orb it can compress Element into much denser form and redirect any potential overflow into the void.<br><br>Luckily my grandmother used to play with one set of those. And so I found them in attic of our old house.",
+		"loreText" : "所以我需要其他的分量。它们被称为单质球体。没有专用容器，元素就不能保存它们的表单。球体的另一个好处是它们的安全性。由于球体内部的小水晶，它可以将元素压缩成密度更大的形状，并将任何潜在的溢出重定向到虚空中。<br><br>幸运的是，我的祖母曾经玩过其中一套。所以我在我们旧房子的阁楼上找到了它们。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Place Orbs on pedestals and make some space around.",
+		"gameplayText" : "把球体放在底座上，在周围留出一些空间。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -360,7 +360,7 @@ var jsonMessages = {
 	},
 	"intro12" : {
 		"flush" : true,
-		"loreText" : "How can I describe it? Rusted pedestals, broken pipes, it's a mess on top of a bigger mess. At least the compression crystals seem to be in working condition. This should suffice for learning experience. <br><br>And so my study began within this littered room. Quickly I met my biggest obstacle. Elemental Glove can only handle 1 Element at the time.",
+		"loreText" : "我该如何描述它呢?生锈的底座，破裂的管道，这是一个更大的混乱之上的混乱。至少压缩晶体似乎处于工作状态。这对于学习经验应该足够了。 <br><br>所以我的研究是从这个凌乱的房间开始的。很快我遇到了最大的障碍。元素手套一次只能处理一个元素。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -373,7 +373,7 @@ var jsonMessages = {
 	},
 	"intro13" : {
 		"flush" : true,
-		"loreText" : "How am I supposed to combine 4 of them?<br>Also it seems that Orbs will be disabled until I infuse them with a bit of Element. This will create a base for that Element, enabling full functionality of the Orb. Once an Orb is active it can be manipulated with pipes and valves. It seems that grandmother had some simple machinery around the room, but everything has crumbled to pieces.",
+		"loreText" : "我怎么把4个结合起来呢?<br/>看起来球体也会被禁用，直到我给它们注入一点元素。这将为该元素创建一个基础，支持Orb的全部功能。一旦球体处于活动状态，就可以通过管道和阀门操纵它。祖母的房间里似乎有一些简单的机械设备，但一切都碎了。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -386,9 +386,9 @@ var jsonMessages = {
 	},
 	"intro14" : {
 		"flush" : true,
-		"loreText" : "Usually when two Elements happen to be in one container, they will interfere and dissapear in small flash of light. Well, I should start to investigate different possibilities first. Maybe if I'll try this at bigger concentration it'll behave differently?<br>Well, it's time to start experimenting. Book theory is one thing, real world is the other. I need to activate those Orbs.",
+		"loreText" : "通常，当两个元素碰巧在一个容器中，它们会在小的闪光中干扰和消失。我应该先研究一下不同的可能性。也许如果我在更大的浓度下尝试它会有不同的表现?<br>是时候开始试验了。书本理论是一回事，现实世界是另一回事。我需要激活那些球。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Begin your experiment.",
+		"gameplayText" : "开始实验。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -399,9 +399,9 @@ var jsonMessages = {
 	},
 	"intro15" : {
 		"flush" : true,
-		"loreText" : "Well, using random debris littering the floor I should be able to fill one Orb with Earth. Lets go.<br><br>Right, one more thing before actually doing anything.<br><br>I decided to make all my interactions with Orbs slow and steady. I don't want to destroy them by clicking too fast.",
+		"loreText" : "用地板上乱扔的垃圾，我应该能把一个球体填满土。让我们去。<br><br>在做任何事情之前还有一件事。<br><br>我决定让我与球体的所有互动缓慢而稳定。我不想因为点击太快而破坏它们。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Below all Orbs is indicator. You can only click on Orb while it's fully green.",
+		"gameplayText" : "在所有球体下面是指示器。您只能在圆球完全绿色时单击它。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
