@@ -68,7 +68,7 @@ function loop(timestamp) {
 		lastTimestamp = timestamp;
 	}
 	if(messageAlive > 0) {
-		document.getElementById("cutsceneIndicator").innerHTML = "Gameplay paused<br>Check Chatbox";
+		document.getElementById("cutsceneIndicator").innerHTML = "游戏暂停<br>查看对话框";
 		lastTimestamp = timestamp;
 		requestAnimationFrame(loop);
 		return;
@@ -83,14 +83,14 @@ function loop(timestamp) {
 		}
 		if(!freezeGameplay) {
 			if(accumulatedTime > 100) {
-				document.getElementById("cutsceneIndicator").innerHTML = "Accumulated time:<br>"+accumulatedTime.toFixed(0) + " ms";
+				document.getElementById("cutsceneIndicator").innerHTML = "累积时间:<br>"+accumulatedTime.toFixed(0) + " 毫秒";
 			} else {
 				document.getElementById("cutsceneIndicator").innerHTML = "";
 			}
 			tick();
 		} else {
 			ticksDoneThisRound = 3;
-			document.getElementById("cutsceneIndicator").innerHTML = "Gameplay paused<br>Check Chatbox";
+			document.getElementById("cutsceneIndicator").innerHTML = "游戏暂停<br>查看对话框";
 		}
 	}
 	
@@ -734,7 +734,7 @@ function runEvent(eventId) {
 			break;
 		case "theEnd":
 			theEndReached = true;
-			document.getElementById("chatMessageGameplay").innerHTML = "You made a total of " + clicks + " clicks to reach this ending screen.";
+			document.getElementById("chatMessageGameplay").innerHTML = "你总共点了 " + clicks + " 次到达这个结尾的屏幕.";
 			break;
 	}
 }
