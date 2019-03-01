@@ -186,7 +186,7 @@ function drawTabs(ctx) {
 			
 			ctx.save();
 			ctx.fillStyle = staticData.textColor;
-			ctx.fillText(staticData.tabNames[i],55,15);
+			ctx.fillText(cnItem(staticData.tabNames[i]),55,15);
 			ctx.restore();
 		}
 		ctx.translate(120,0);
@@ -361,14 +361,14 @@ function drawMainBackground(ctx) {
 				} else {
 					ctx.font = "14px Arial";
 				}
-				ctx.fillText(oUpgrade.boughtName,53,15);
+				ctx.fillText(cnItem(oUpgrade.boughtName),53,15);
 			} else {
 				if(oUpgrade.name.length > 14) {
 					ctx.font = "12px Arial";
 				} else {
 					ctx.font = "14px Arial";
 				}
-				ctx.fillText(oUpgrade.name,53,15);
+				ctx.fillText(cnItem(oUpgrade.name),53,15);
 			}
 			ctx.translate(0,35);
 		}
@@ -487,7 +487,7 @@ function drawMainBackground(ctx) {
 function draw4ValverBackground(ctx,x,y,machineName) {
 	ctx.strokeRect(x,y,108,90);
 	ctx.fillStyle = staticData.textColor;
-	ctx.fillText(machineName,x+54,y+11);
+	ctx.fillText(cnItem(machineName),x+54,y+11);
 	ctx.fillStyle = staticData.elementalColor[3][0];
 	ctx.fillRect(x+3,y+25,30,30);
 	ctx.fillStyle = staticData.elementalColor[2][0];
@@ -724,7 +724,7 @@ function drawTooltip(ctx) {
 							ctx.fillStyle = staticData.elementalColor[elementalTranlator[cost.type]][0];
 							ctx.textAlign = "right";
 							
-							ctx.fillText(cost.type,560,49+j*18);
+							ctx.fillText(cnItem(cost.type),560,49+j*18);
 							ctx.font = "16px 'Courier New'";
 							drawNumber(ctx,580,50+j*18,cost.amount);
 							ctx.restore();
@@ -1413,7 +1413,7 @@ function drawStatsActive(ctx) {
 			var achievement = achievementsData.achievementList[achievementId];
 			ctx.save();
 			
-			ctx.fillText(achievement.name,400,y+20);
+			ctx.fillText(cnItem(achievement.name),400,y+20);
 			ctx.font = "14px Arial";
 			if(achievementId==='speed') {
 				if(!dynamicData.startTime) {
