@@ -685,9 +685,9 @@ function drawTooltip(ctx) {
 	ctx.font = "18px Arial";
 	ctx.fillText(cnItem(canvasTooltip.topRow()),130,52);
 	ctx.font = "14px Arial";
-	ctx.fillText(canvasTooltip.middleRow(),130,80);
+	ctx.fillText(cnItem(canvasTooltip.middleRow()),130,80);
 	ctx.font = "11px Arial";
-	ctx.fillText(canvasTooltip.bottomRow(),130,100);
+	ctx.fillText(cnItem(canvasTooltip.bottomRow()),130,100);
 	
 	ctx.restore();
 	ctx.save();

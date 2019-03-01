@@ -2082,7 +2082,7 @@ var functionData = {
 	},
 	"mainHub" : function(oC,arg1) {
 		saveData();
-		window.location.href = "https://nagshell.github.io/elemental-inception-incremental";
+		window.location.href = "http://likexia.gitee.io/elemental-inception-incremental";
 	},
 	"patreonLink" : function(oC,arg1) {
 		window.open('https://www.patreon.com/user?u=12559765', '_blank');
