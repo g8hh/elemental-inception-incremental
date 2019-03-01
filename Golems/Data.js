@@ -2092,7 +2092,7 @@ var functionData = {
 	},
 	"exportData" : function(oC,arg1) {
 		functionData.rejectedImport();
-		if(confirm("Once you accept save data will be copied to your clipboard.")) {
+		if(confirm("一旦您接受保存数据将被复制到您的剪贴板。")) {
 			var tempElem = document.getElementById("clipbordElement");
 			tempElem.style.display = '';
 			tempElem.value = saveDataToCode();

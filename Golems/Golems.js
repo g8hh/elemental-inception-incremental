@@ -744,7 +744,7 @@ function saveDataToCode() {
 }
 
 function resetData() {
-	if(confirm("Are you sure? It'll wipe everything except earned achievements.")) {
+	if(confirm("你确定吗?它会抹去一切，除了获得的成就。")) {
 		dynamicData.hardResetActivated = true;
 		saveData();
 		location.reload();
