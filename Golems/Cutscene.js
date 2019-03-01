@@ -28,7 +28,7 @@ function endDraw() {
 		ctxActive.fill();
 		ctxActive.stroke();
 		ctxActive.fillStyle = staticData.textColor;
-		ctxActive.fillText("Skip",100,100);
+		ctxActive.fillText("跳过",100,100);
 	}
 }
 

@@ -1430,7 +1430,7 @@ function drawStatsActive(ctx) {
 					shownTime = Math.floor(time/60000)+time%60000/100000;
 					shownTime = Math.floor(shownTime*100)/100;
 					ctx.font = "10px Arial";
-					ctx.fillText("Current run : "+shownTime.toFixed(2)+" min",400,y+65);
+					ctx.fillText("当前回合 : "+shownTime.toFixed(2)+" min",400,y+65);
 				}
 				
 			} else {
@@ -1452,7 +1452,7 @@ function drawStatsActive(ctx) {
 		ctx.font = "18px Arial";
 		ctx.textAlign = "center";
 		ctx.fillStyle = staticData.textColor;
-		ctx.fillText("Finish the game once to unlock achievements.",400,130);
+		ctx.fillText("完成游戏一次解锁成就.",400,130);
 		ctx.restore();
 	}
 }
@@ -1530,7 +1530,7 @@ function drawFAQ(ctx) {
 	ctx.globalAlpha = 1;
 	ctx.fillStyle = staticData.textColor;
 	ctx.textAlign = "center";
-	ctx.fillText("Frequently asked questions",400,160);
+	ctx.fillText("常见问题",400,160);
 	ctx.textAlign = "left";
 	ctx.fillText("Q1 : Why can't I see capacity of the machines?",160,200);
 	ctx.fillText("A1 : With new crystals machines have near infinite capacity. (1e300)",160,220);
@@ -1574,9 +1574,9 @@ function drawDonate(ctx) {
 	
 	ctx.fillText("Patreon",300,370);
 	ctx.fillText("Paypal",500,370);
-	ctx.fillText("Go back",400,470);
+	ctx.fillText("返回",400,470);
 	
-	ctx.fillText("This it the place if you really enjoyed my game",400,230);
-	ctx.fillText("and want to support me financially.",400,252);
-	ctx.fillText("Here are the links which you can use to do so.",400,274);
+	ctx.fillText("如果你真的喜欢我的游戏，这里就是",400,230);
+	ctx.fillText("想在经济上支持我。",400,252);
+	ctx.fillText("下面是您可以使用的链接。",400,274);
 }

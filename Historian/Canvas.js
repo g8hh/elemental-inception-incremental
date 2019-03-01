@@ -31,7 +31,7 @@ function draw() {
 	ctxActive.stroke();
 	ctxActive.fill();
 	ctxActive.fillStyle = "#818181";
-	ctxActive.fillText("Reset", 25, 25);
+	ctxActive.fillText("重置", 25, 25);
 }
 
 function drawNumber(ctx, num, x, y) {

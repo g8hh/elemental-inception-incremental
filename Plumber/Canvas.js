@@ -18,7 +18,7 @@ function draw() {
 	ctxActive.clearRect(0, 0, 800, 800);
 
 	ctxActive.fillStyle = "#FFFFFF";
-	ctxActive.fillText("FPS: " + Math.round(fps), 4, 10);
+	ctxActive.fillText("帧率: " + Math.round(fps), 4, 10);
 	ctxActive.restore();
 }
 var colorTypes = [

@@ -53,7 +53,7 @@ function draw() {
 	}
 	if (explosionCD > 0) {
 		ctx.globalAlpha = (120 - Math.abs(explosionCD - 120)) / 120;
-		ctx.fillText("*explosion*", eX, eY);
+		ctx.fillText("*爆炸*", eX, eY);
 		explosionCD--;
 	}
 }
