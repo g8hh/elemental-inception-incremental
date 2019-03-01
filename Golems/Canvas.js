@@ -140,7 +140,7 @@ function draw() {
 		
 		ctxActive.textAlign = "center";
 		ctxActive.fillStyle = staticData.textColor;
-		ctxActive.fillText("Proceed",400,670);
+		ctxActive.fillText("继续",400,670);
 		
 		
 		var text = lore.popupMessages[dynamicData.popupActive].text;
@@ -347,7 +347,7 @@ function drawMainBackground(ctx) {
 		
 		ctx.save();
 		ctx.fillStyle = staticData.textColor;
-		ctx.fillText("Upgrades",50,72);
+		ctx.fillText("升级",50,72);
 		ctx.restore();
 		
 		ctx.save();
@@ -403,8 +403,8 @@ function drawMainBackground(ctx) {
 	
 	ctx.save();
 	ctx.fillStyle = staticData.textColor;
-	ctx.fillText("Valve",745,72);
-	ctx.fillText("Controller",745,92);
+	ctx.fillText("阀门",745,72);
+	ctx.fillText("控制器",745,92);
 	ctx.restore();
 	
 	ctx.save();
@@ -454,7 +454,7 @@ function drawMainBackground(ctx) {
 		ctx.save();
 		
 		ctx.fillStyle = staticData.textColor;
-		ctx.fillText("Catalyst",238,73);
+		ctx.fillText("催化剂",238,73);
 		
 		var gradient = ctx.createLinearGradient(200,0,276,0);
 		gradient.addColorStop(0,"#555555");
@@ -479,8 +479,8 @@ function drawMainBackground(ctx) {
 	ctx.fillRect(10,750,100,30);
 	ctx.strokeRect(10,750,100,30);
 	ctx.fillStyle = staticData.textColor;
-	ctx.fillText("FAQ",60,715);
-	ctx.fillText("Donate",60,765);
+	ctx.fillText("常见问题",60,715);
+	ctx.fillText("捐赠",60,765);
 	ctx.restore();
 }
 
@@ -1139,10 +1139,10 @@ function drawTankNumbers(ctx) {
 	ctx.font = "18px 'Open Sans'";
 	ctx.textAlign = "left";
 	
-	ctx.fillText("Earth",130,-260);
-	ctx.fillText("Water",130,260);
-	ctx.fillText("Air",-270,260);
-	ctx.fillText("Fire",-270,-260);
+	ctx.fillText("土地",130,-260);
+	ctx.fillText("水",130,260);
+	ctx.fillText("空气",-270,260);
+	ctx.fillText("火",-270,-260);
 	
 	drawNumber(ctx,185,-258,dynamicData.elementalTanks["Earth"].amount);
 	drawNumber(ctx,185,262,dynamicData.elementalTanks["Water"].amount);
@@ -1256,7 +1256,7 @@ function drawGolemBackground(ctx) {
 	if(dynamicData.mergingButton) {
 		ctx.fillStyle = staticData.textColor;
 		ctx.strokeRect(350,130,100,30);
-		ctx.fillText("Combine",400,145);
+		ctx.fillText("组合",400,145);
 		
 		ctx.strokeRect(330,170,60,30);
 		ctx.strokeRect(410,170,60,30);
@@ -1378,8 +1378,8 @@ function drawLoreActive(ctx) {
 	
 	ctx.fillStyle = staticData.textColor;
 	ctx.textAlign = "center";
-	ctx.fillText("Scroll to top",300,80);
-	ctx.fillText("Scroll to bottom",500,80);
+	ctx.fillText("滚到顶部",300,80);
+	ctx.fillText("滚到底部",500,80);
 	
 	ctx.beginPath();
 	ctx.rect(100,140,600,600);
@@ -1407,7 +1407,7 @@ function drawStatsActive(ctx) {
 		ctx.font = "18px Arial";
 		ctx.textAlign = "center";
 		ctx.fillStyle = staticData.textColor;
-		ctx.fillText("Achievements - Soft Reset lets you try to get them all.",400,130);
+		ctx.fillText("成就 - 软重置可以让您尝试获得所有.",400,130);
 		var y = 160;
 		for(var achievementId in achievementsData.achievementList) {
 			var achievement = achievementsData.achievementList[achievementId];
@@ -1417,14 +1417,14 @@ function drawStatsActive(ctx) {
 			ctx.font = "14px Arial";
 			if(achievementId==='speed') {
 				if(!dynamicData.startTime) {
-					ctx.fillText("Finish stage under 90 min. Your timer will start on next Soft Reset.",400,y+55);
+					ctx.fillText("90分钟内完成。您的计时器将在下一次软复位时启动。",400,y+55);
 				} else {
 					var shownTime = Math.floor(achievement.time/60000)+achievement.time%60000/100000;
 					shownTime = Math.floor(shownTime*100)/100;
 					if(achievement.unlocked) {
-						ctx.fillText("Your best time: "+shownTime.toFixed(2)+" min - Developer's time 66.38 min.",400,y+45);
+						ctx.fillText("你的最佳时间: "+shownTime.toFixed(2)+" 分钟 - 开发者的时间是 66.38 分钟.",400,y+45);
 					} else {
-						ctx.fillText("Finish stage under 90 min. Your current best time : "+shownTime.toFixed(2)+" min.",400,y+45);
+						ctx.fillText("在90分钟内完成这个阶段，你目前最好的时间是 : "+shownTime.toFixed(2)+" 分钟.",400,y+45);
 					}
 					var time = ((new Date()) - dynamicData.startTime);
 					shownTime = Math.floor(time/60000)+time%60000/100000;
@@ -1487,17 +1487,17 @@ function drawOptionsActive(ctx) {
 	ctx.strokeRect(420,400,160,40);
 	
 	ctx.fillStyle = staticData.textColor;
-	ctx.fillText("Manual Save",400,140);
-	ctx.fillText("Manual Load",400,200);
-	ctx.fillText("Soft Reset",400,260);
+	ctx.fillText("手动保存",400,140);
+	ctx.fillText("手动加载",400,200);
+	ctx.fillText("软复位",400,260);
 	if(dynamicData.colorblindMode) {
-		ctx.fillText("Turn colorblind valves mode off.",200,320);
+		ctx.fillText("打开色盲阀门模式关闭。",200,320);
 	} else {
-		ctx.fillText("Turn colorblind valves mode on.",200,320);
+		ctx.fillText("把色盲阀门模式打开。",200,320);
 	}
-	ctx.fillText("Go back to stage select.",600,320);
-	ctx.fillText("Experimental Import",300,420);
-	ctx.fillText("Experimental Export",500,420);
+	ctx.fillText("返回阶段选择。",600,320);
+	ctx.fillText("实验性导入",300,420);
+	ctx.fillText("实验性导出",500,420);
 }
 
 function drawNumber(ctx,x,y,amount,prefix) {
