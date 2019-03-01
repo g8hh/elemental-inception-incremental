@@ -505,7 +505,7 @@ function draw2ValverBackground(ctx,x,y,machineName,elementalIdLeft,elementalIdRi
 	}
 	ctx.strokeRect(x,y,108,58);
 	ctx.fillStyle = staticData.textColor;
-	ctx.fillText(machineName,x+54,y+11);
+	ctx.fillText(cnItem(machineName),x+54,y+11);
 	ctx.fillStyle = staticData.elementalColor[elementalIdLeft][0];
 	ctx.fillRect(x+3,y+25,30,30);
 	ctx.fillStyle = staticData.elementalColor[elementalIdRight][0];
@@ -576,7 +576,7 @@ function drawMainActive(ctx) {
 		ctx.fillStyle = staticData.textColor;
 		ctx.textAlign = "left";
 		ctx.font = "16px Arial";
-		ctx.fillText(tempData.currentBanner.text,tempData.currentBannerPosition,740);
+		ctx.fillText(cnItem(tempData.currentBanner.text),tempData.currentBannerPosition,740);
 		lore.bannerScroll(ctx);
 	} else {
 		if(tempData.ticksWithoutBanner++ > 24000) {
@@ -683,7 +683,7 @@ function drawTooltip(ctx) {
 	
 	ctx.fillStyle = staticData.textColor;
 	ctx.font = "18px Arial";
-	ctx.fillText(canvasTooltip.topRow(),130,52);
+	ctx.fillText(cnItem(canvasTooltip.topRow()),130,52);
 	ctx.font = "14px Arial";
 	ctx.fillText(canvasTooltip.middleRow(),130,80);
 	ctx.font = "11px Arial";
@@ -736,7 +736,7 @@ function drawTooltip(ctx) {
 						ctx.save();
 						ctx.fillStyle = staticData.elementalColor[elementalTranlator[oCM.ingredient.type]][0];
 						ctx.textAlign = "right";
-						ctx.fillText(oCM.ingredient.type,560,49);
+						ctx.fillText(cnItem(oCM.ingredient.type),560,49);
 						ctx.font = "16px 'Courier New'";
 						drawNumber(ctx,580,50,oCM.ingredient.amount);
 						ctx.restore();
@@ -744,7 +744,7 @@ function drawTooltip(ctx) {
 						ctx.save();
 						ctx.fillStyle = staticData.elementalColor[elementalTranlator[oCM.reagent.type]][0];
 						ctx.textAlign = "right";
-						ctx.fillText(oCM.reagent.type,560,67);
+						ctx.fillText(cnItem(oCM.reagent.type),560,67);
 						ctx.font = "16px 'Courier New'";
 						drawNumber(ctx,580,68,oCM.reagent.amount);
 						ctx.restore();
@@ -757,7 +757,7 @@ function drawTooltip(ctx) {
 							ctx.save();
 							ctx.fillStyle = staticData.elementalColor[elementalTranlator[oT.type]][0];
 							ctx.textAlign = "right";
-							ctx.fillText(oT.type,455,49+18*j);
+							ctx.fillText(cnItem(oT.type),455,49+18*j);
 							
 							
 							ctx.font = "16px 'Courier New'";
@@ -1434,7 +1434,7 @@ function drawStatsActive(ctx) {
 				}
 				
 			} else {
-				ctx.fillText(achievement.description,400,y+55);
+				ctx.fillText(cnItem(achievement.description),400,y+55);
 			}
 			
 			if(achievement.unlocked) {

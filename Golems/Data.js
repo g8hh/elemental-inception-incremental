@@ -643,8 +643,8 @@ var staticData = {
 				},
 				"middleRow" : function() {
 					var oCM = dynamicData.conversionMachines[0];
-					return "Conversion formula : "+oCM.ingredient.drain + " " + oCM.ingredient.type + " + " +
-						oCM.reagent.drain + " " + oCM.reagent.type + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + oCM.product.type + ".";
+					return "转换公式 : "+oCM.ingredient.drain + " " + cnItem(oCM.ingredient.type) + " + " +
+						oCM.reagent.drain + " " + cnItem(oCM.reagent.type) + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + cnItem(oCM.product.type) + ".";
 				},
 				"bottomRow" : function() {
 					return "";
@@ -662,8 +662,8 @@ var staticData = {
 				},
 				"middleRow" : function() {
 					var oCM = dynamicData.conversionMachines[1];
-					return "Conversion formula : "+oCM.ingredient.drain + " " + oCM.ingredient.type + " + " +
-						oCM.reagent.drain + " " + oCM.reagent.type + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + oCM.product.type + ".";
+					return "转换公式 : "+oCM.ingredient.drain + " " + cnItem(oCM.ingredient.type) + " + " +
+						oCM.reagent.drain + " " + cnItem(oCM.reagent.type) + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + cnItem(oCM.product.type) + ".";
 				},
 				"bottomRow" : function() {
 					return "";
@@ -681,8 +681,8 @@ var staticData = {
 				},
 				"middleRow" : function() {
 					var oCM = dynamicData.conversionMachines[2];
-					return "Conversion formula : "+oCM.ingredient.drain + " " + oCM.ingredient.type + " + " +
-						oCM.reagent.drain + " " + oCM.reagent.type + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + oCM.product.type + ".";
+					return "转换公式 : "+oCM.ingredient.drain + " " + cnItem(oCM.ingredient.type) + " + " +
+						oCM.reagent.drain + " " + cnItem(oCM.reagent.type) + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + cnItem(oCM.product.type) + ".";
 				},
 				"bottomRow" : function() {
 					return "";
@@ -700,8 +700,8 @@ var staticData = {
 				},
 				"middleRow" : function() {
 					var oCM = dynamicData.conversionMachines[3];
-					return "Conversion formula : "+oCM.ingredient.drain + " " + oCM.ingredient.type + " + " +
-						oCM.reagent.drain + " " + oCM.reagent.type + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + oCM.product.type + ".";
+					return "转换公式 : "+oCM.ingredient.drain + " " + cnItem(oCM.ingredient.type) + " + " +
+						oCM.reagent.drain + " " + cnItem(oCM.reagent.type) + " = " + (oCM.product.rate*(1+dynamicData.utilityMachines[0].boost)).toFixed(2) + " " + cnItem(oCM.product.type) + ".";
 				},
 				"bottomRow" : function() {
 					return "";
