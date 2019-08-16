@@ -1,70 +1,38 @@
-var machineData = {
-	Liquefier:
-	{
-		x: 300,
-		y: 400,
-		displayRegionRegularDraw: true,
-		displayRegionElement: "Water",
-		paneRegularDraw: true,
-		recipes: [
-		{
-			title: "Water Conversion",
-			enabled: false,
-			scaling: true,
-			efficiency: 1.01,
-			inputs: [
-			{
-				type: "Earth",
-				ratio: 1,
-				min: 1,
-				slider: 1,
-			},
-			{
-				type: "Water",
-				ratio: 1,
-				min: 1,
-				slider: 1,
-			}],
-			outputs: [
-			{
-				type: "Water",
-				ratio: 2,
-				max: 11,
-				slider: 1,
-			}],
-		}],
-	},
-	Boiler:
-	{
-		x: 300,
-		y: 200,
-		displayRegionRegularDraw: true,
-		displayRegionElement: "Air",
-		recipes: [],
-	},
-	Combustor:
-	{
-		x: 500,
-		y: 200,
-		displayRegionRegularDraw: true,
-		displayRegionElement: "Fire",
-		recipes: [],
-	},
-	Volcano:
-	{
-		x: 500,
-		y: 400,
-		displayRegionRegularDraw: true,
-		displayRegionElement: "Earth",
-		recipes: [],
-	},
+var chartColors = {
+	null: "#080808",
+	working: "#686868",
+	full: "#A8A8A8",
+	empty: "#282828",
 };
+var machineData;
+var machineDisplayElements = {};
 
-function preprocessMachinesData()
+function preprocessMachinesData(simplifiedDataToBeProcessed)
 {
+	machines.list = [];
+	machines.dataTranslator = [];
+
+	machines.glowCheckCD = 0;
+
+	machineData = prepareTemplatedMachineData(simplifiedDataToBeProcessed);
+
+	var count = 0;
 	for (var title in machineData)
 	{
-		new cMachine(title);
+		machineData[title].translatedID = count++;
+		machines.dataTranslator.push(title);
+
+		if (machineData[title].displayArray)
+		{
+			for (var i = 0; i < machineData[title].displayArray.length; i++)
+			{
+				machineDisplayElements[machineData[title].displayArray[i]] = title;
+			}
+		}
+		else if (machineData[title].displayElement)
+		{
+			machineDisplayElements[machineData[title].displayElement] = title;
+		}
+		initMachine(title);
 	}
 }
-preprocessMachinesData();
