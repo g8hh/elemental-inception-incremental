@@ -664,6 +664,55 @@ function preprocessPaneData()
 		}
 	}
 	regionData.hideRegion.action(tooltipPane);
+	
+	victoryPane = new cPane(null, 0, 0);
+	path = new Path2D();
+	path.rect(0, 0, 60, 17);
+	victoryPane.boundaryPath = path;
+	victoryPane.customDraw = function (ctx)
+	{
+		ctx.save();
+		ctx.textAlign = "left";
+		ctx.fillStyle = ctx.strokeStyle;
+		
+		var textSplit = this.text.split("\n");
+		var y = 8;
+		for(let i=0;i<textSplit.length;i++){
+			ctx.fillText(textSplit[i], 4, y);
+			y+=16;
+		}	
+		ctx.restore();
+	}
+	victoryPane.showText = function (text)
+	{
+		this.readyToShow = true;
+		if (this.text != text)
+		{
+			this.text = text;
+			var path = new Path2D();
+			
+			var textSplit = text.split("\n");
+			
+			var textWidth = 0;
+			var textHeight = 16 * textSplit.length;
+			
+			for(let i=0;i<textSplit.length;i++){
+				textWidth = Math.max(textWidth,Math.ceil(ctxActive.measureText(textSplit[i]).width));
+			}			
+			
+			path.rect(0, 0, textWidth + 200, textHeight);
+			if (this.hiddenPath)
+			{
+				this.hiddenPath = path;
+			}
+			else
+			{
+				this.boundaryPath = path;
+			}
+		}
+	}
+	victoryPane.subRegions.push(regionData.hideRegion);
+	regionData.hideRegion.action(victoryPane);
 
 	waypointPane = new cPane(trackerPane, tabRegions[0].x, tabRegions[0].y);
 	waypointPane.modelRegion = tabRegions[0];
@@ -1014,54 +1063,54 @@ function preprocessPaneData()
 
 	preprocessOptions();
 
-	changelogPane = new cPane(mainPane, 200, 200);
-	path = new Path2D();
-	path.rect(0, 0, 300, 230);
-	changelogPane.boundaryPath = path;
-	changelogPane.subRegions.push(regionData.dragRegion);
-	changelogPane.subRegions.push(regionData.pinRegion);
-	changelogPane.subRegions.push(regionData.hideRegion);
-	changelogPane.subRegions.push(regionData.nextPageRegion);
-	changelogPane.subRegions.push(regionData.prevPageRegion);
-	changelogPane.subRegions.push(regionData.draggableTitleRegion);
-	changelogPane.maxPages = 4;
-	changelogPane.currentPage = changelogPane.maxPages;
-	changelogPane.customDraw = function (ctx)
-	{
-		ctx.save();
-		ctx.fillStyle = ctx.strokeStyle;
-		this.title = locale.page + " " + (this.currentPage + 1) + " " + locale.outOf + " " + (this.maxPages + 1);
-		if (images["changelogPage" + this.currentPage])
-		{
-			ctx.drawImage(images["changelogPage" + this.currentPage], 0, 50);
-		}
-		switch (this.currentPage)
-		{
-			case 0:
-				break;
-		}
-		ctx.restore();
-	}
-	changelogPane.region = tabRegions[10];
-	changelogPane.region.mouseHandler = function (pane, x, y, type)
-	{
-		if (type == "mouseup")
-		{
-			if (this.pane.boundaryPath)
-			{
-				regionData.hideRegion.mouseHandler(this.pane, x, y, type);
-			}
-			else
-			{
-				regionData.showRegion.mouseHandler(this.pane, x, y, type);
-				this.pane.x = 50 - this.pane.top.centerX;
-				this.pane.y = 50 - this.pane.top.centerY;
-			}
-		}
-	};
-	changelogPane.region.pane = changelogPane;
-	regionData.pinRegion.action(changelogPane);
-	regionData.hideRegion.action(changelogPane);
+	// changelogPane = new cPane(mainPane, 200, 200);
+	// path = new Path2D();
+	// path.rect(0, 0, 300, 230);
+	// changelogPane.boundaryPath = path;
+	// changelogPane.subRegions.push(regionData.dragRegion);
+	// changelogPane.subRegions.push(regionData.pinRegion);
+	// changelogPane.subRegions.push(regionData.hideRegion);
+	// changelogPane.subRegions.push(regionData.nextPageRegion);
+	// changelogPane.subRegions.push(regionData.prevPageRegion);
+	// changelogPane.subRegions.push(regionData.draggableTitleRegion);
+	// changelogPane.maxPages = 4;
+	// changelogPane.currentPage = changelogPane.maxPages;
+	// changelogPane.customDraw = function (ctx)
+	// {
+		// ctx.save();
+		// ctx.fillStyle = ctx.strokeStyle;
+		// this.title = locale.page + " " + (this.currentPage + 1) + " " + locale.outOf + " " + (this.maxPages + 1);
+		// if (images["changelogPage" + this.currentPage])
+		// {
+			// ctx.drawImage(images["changelogPage" + this.currentPage], 0, 50);
+		// }
+		// switch (this.currentPage)
+		// {
+			// case 0:
+				// break;
+		// }
+		// ctx.restore();
+	// }
+	// changelogPane.region = tabRegions[10];
+	// changelogPane.region.mouseHandler = function (pane, x, y, type)
+	// {
+		// if (type == "mouseup")
+		// {
+			// if (this.pane.boundaryPath)
+			// {
+				// regionData.hideRegion.mouseHandler(this.pane, x, y, type);
+			// }
+			// else
+			// {
+				// regionData.showRegion.mouseHandler(this.pane, x, y, type);
+				// this.pane.x = 50 - this.pane.top.centerX;
+				// this.pane.y = 50 - this.pane.top.centerY;
+			// }
+		// }
+	// };
+	// changelogPane.region.pane = changelogPane;
+	// regionData.pinRegion.action(changelogPane);
+	// regionData.hideRegion.action(changelogPane);
 
 	donatePage = new cPane(mainPane, 300, 100);
 	var path = new Path2D();
