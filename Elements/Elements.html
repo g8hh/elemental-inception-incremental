@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>元素壳 - Elemental Shells</title>
+<link rel="stylesheet" type="text/css" href="Elements.css">
+</head>
+
+<body id="overlord">
+<div class="container" id="containerButton" style="padding:10px;display:none;">
+	<div style="padding : 2px 5px;"><button id="tabButton0" class="tabButton" onclick="switchTab(0)"> 主要设置 </button></div>
+	<div style="padding : 2px 5px;"><button id="tabButton1" class="tabButton" onclick="switchTab(1)"> 全尺寸预览</button></div>
+	<div style="padding : 2px 5px;"><button id="tabButton2" class="tabButton" onclick="switchTab(2)"> 日志 </button></div>
+	<div style="padding : 2px 5px;"><button id="tabButton3" class="tabButton" onclick="switchTab(3)"> 数邻墙 </button></div>
+	<div style="padding : 2px 5px;"><button id="tabButton4" class="tabButton" onclick="switchTab(4)"> 开发者信息 </button></div>
+	<div style="padding : 2px 5px;"><button id="tabButton5" class="tabButton" onclick="switchTab(5)"> 教程 </button></div>
+	<div style="padding : 2px 5px;"><button id="tabButton6" class="tabButton" onclick="switchTab(6)"> 选项 </button></div>
+</div>
+<button class="tabButton" id="skipButton" onclick="skipIntro()">跳过介绍</button>
+<button class="tabButton" onclick="document.documentElement.scrollTop = document.documentElement.scrollHeight;">滚到底部</button>
+<div class="container" id="chat" style="padding-left: 25px">
+	<div class="chatMessage" id="chatMessage">
+		<div class="chatMessageLore" id="chatMessageLore"></div>
+		<div class="chatMessageProgress">
+			<div class="chatMessageProgressText"id="chatMessageProgressText"></div>
+			<div class="chatMessageProgressBar" id="chatMessageProgressBar" style="transition: transform 1ms"></div>
+		</div>
+		<div class="chatMessageButton" id="chatMessageButton" onclick = "chatButton()">继续</div>
+		<div class="chatMessageGameplay" id="chatMessageGameplay"></div>
+	</div>
+</div>
+<div id="tab0" style="display:none; padding-left: 25px">
+	<div style="text-align:center; height: 100%; padding-top:6px; padding-bottom:6px; font-size:26px; background-color: #1D1D1D;">元素宝珠</div>
+	<div class="container" id="containerElement" style="display:none;">
+		<div class="elementDivTop" id="element0" style="display:none;">
+			<div class="elementDivMid" onclick="manual(0)" style="color: #C5FFB0; border-color: #66C543;">
+				<div class="elementText">土地</div>
+				<div class="elementTank" id="elementTank0"></div>
+				<div class="elementBase" id="elementBase0" style="background-color: #449625; border-color: #66C543;"></div>
+				<div class="elementCost" id="elementCost0" style="color: #C5FFB0;">点击成本:<br>免费</div>
+				<div class="elementBackground" id="elementBackground0" style="background-color: #2F681A;"></div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="golem0" style="display:none;">
+			<div class="golemDivMid" style="color: #C5FFB0; border-color: #66C543; background-color: #2F681A;">
+				<div class="golemText">土地<br>傀儡</div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="element1" style="display:none;">
+			<div class="elementDivMid" onclick="manual(1)" style="color: #B9E3FF; border-color: #75C1F2;">
+				<div class="elementText">水</div>
+				<div class="elementTank" id="elementTank1"></div>
+				<div class="elementBase" id="elementBase1" style="background-color: #387094; border-color: #75C1F2;"></div>
+				<div class="elementCost" id="elementCost1" style="color: #C5FFB0;">点击成本:<br>4 液化器中的土地</div>
+				<div class="elementBackground" id="elementBackground1" style="background-color: #39586C;"></div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="golem1" style="display:none;">
+			<div class="golemDivMid" style="color: #B9E3FF; border-color: #75C1F2; background-color: #39586C;">
+				<div class="golemText">水<br>傀儡</div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="element2" style="display:none;">
+			<div class="elementDivMid" onclick="manual(2)" style="color: #FFF6C6; border-color: #FFEB71;">
+				<div class="elementText">空气</div>
+				<div class="elementTank" id="elementTank2"></div>
+				<div class="elementBase" id="elementBase2" style="background-color: #AA9A3B; border-color: #FFEB71;"></div>
+				<div class="elementCost" id="elementCost2" style="color: #C5FFB0;">点击成本:<br>4 锅炉中的水</div>
+				<div class="elementBackground" id="elementBackground2" style="background-color: #615400;"></div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="golem2" style="display:none;">
+			<div class="golemDivMid" style="color: #FFF6C6; border-color: #FFEB71; background-color: #615400;">
+				<div class="golemText">空气<br>傀儡</div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="element3" style="display:none;">
+			<div class="elementDivMid" onclick="manual(3)" style="color: #FFC6C6; border-color: #E74F4F;">
+				<div class="elementText">火</div>
+				<div class="elementTank" id="elementTank3"></div>
+				<div class="elementBase" id="elementBase3" style="background-color: #BD1717; border-color: #E74F4F;"></div>
+				<div class="elementCost" id="elementCost3" style="color: #C5FFB0;">点击成本:<br>4 燃烧室中的空气</div>
+				<div class="elementBackground" id="elementBackground3" style="background-color: #780A0A;"></div>
+			</div>
+		</div>
+		<div class="elementDivTop" id="golem3" style="display:none;">
+			<div class="golemDivMid" style="color: #FFC6C6; border-color: #E74F4F; background-color: #780A0A;">
+				<div class="golemText">火<br>傀儡</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="containerMouse" style="display:none;">
+		<div class="mouseIndicator">
+			<div class="mouseIndicatorBar" id="mouseIndicatorBar"></div>
+		</div>
+	</div>
+	<div style="text-align:center; height: 100%; padding-top:6px; padding-bottom:6px; font-size:26px; background-color: #1D1D1D;">机器</div>		
+	<div class="container">
+		<div class="container" style="width:300px;height:370px;float:left">
+			<div class="machine" id="machine1" style="display:none;">
+				<div class="machineMainPanel">
+					<div class="machineName">锅炉</div>
+					<div class="machineValves">
+						<div class="machineValveIngredient" onclick="machineIngredientValveTurn(1)">
+							<div class="machineValveBar" id="machineIngredientValve1"></div>
+						</div>
+						<div class="machineValveReagent" onclick="machineReagentValveTurn(1)">
+							<div class="machineValveBar" id="machineReagentValve1"></div>
+						</div>
+					</div>
+					<div class="machineTanks">
+						<div class="machineTankIngredient"><div class="machineTankBar" id="machineIngredientTank1" style="background-color: #39586C;"></div></div>
+						<div class="machineTankReagent"><div class="machineTankBar" id="machineReagentTank1" style="background-color: #780A0A;"></div></div>
+					</div>
+				</div>
+				<div class="machineSidePanel">
+					<div class="machineInfo">
+						<div class="machineInfoName">产品</div>
+						<div class="machineInfoElementName" id="machineProductInfo1">4 空气</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">成分</div>
+						<div class="machineInfoElementName">4 水</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">反应物</div>
+						<div class="machineInfoElementName">1 火</div>
+					</div>
+				</div>
+			</div>
+			<div class="machine" id="machine2" style="display:none;">
+				<div class="machineMainPanel">
+					<div class="machineName">燃烧室</div>
+					<div class="machineValves">
+						<div class="machineValveIngredient" onclick="machineIngredientValveTurn(2)">
+							<div class="machineValveBar" id="machineIngredientValve2"></div>
+						</div>
+						<div class="machineValveReagent" onclick="machineReagentValveTurn(2)">
+							<div class="machineValveBar" id="machineReagentValve2"></div>
+						</div>
+					</div>
+					<div class="machineTanks">
+						<div class="machineTankIngredient"><div class="machineTankBar" id="machineIngredientTank2" style="background-color: #615400;"></div></div>
+						<div class="machineTankReagent"><div class="machineTankBar" id="machineReagentTank2" style="background-color: #780A0A;"></div></div>
+					</div>
+				</div>
+				<div class="machineSidePanel">
+					<div class="machineInfo">
+						<div class="machineInfoName">产品</div>
+						<div class="machineInfoElementName" id="machineProductInfo2">4 火</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">成分</div>
+						<div class="machineInfoElementName">4 空气</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">反应物</div>
+						<div class="machineInfoElementName">1 火</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="machineHolder" style="width:250px;height:370px;float:left">
+			<div id="cutsceneIndicator" style="text-align:center; padding-top:6px; padding-bottom:6px; font-size:26px; color: #FFC6C6; background-color: #1D1D1D;"></div>	
+		</div>
+		<div class="container" style="width:300px;height:370px;float:left">
+			<div class="machine" id="machine0" style="display:none;">
+				<div class="machineMainPanel">
+					<div class="machineName">液化器</div>
+					<div class="machineValves">
+						<div class="machineValveIngredient" onclick="machineIngredientValveTurn(0)">
+							<div class="machineValveBar" id="machineIngredientValve0"></div>
+						</div>
+						<div class="machineValveReagent" onclick="machineReagentValveTurn(0)">
+							<div class="machineValveBar" id="machineReagentValve0"></div>
+						</div>
+					</div>
+					<div class="machineTanks">
+						<div class="machineTankIngredient"><div class="machineTankBar" id="machineIngredientTank0" style="background-color: #2F681A;"></div></div>
+						<div class="machineTankReagent"><div class="machineTankBar" id="machineReagentTank0" style="background-color: #39586C;"></div></div>
+					</div>
+				</div>
+				<div class="machineSidePanel">
+					<div class="machineInfo">
+						<div class="machineInfoName">产品</div>
+						<div class="machineInfoElementName" id="machineProductInfo0">4 水</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">成分</div>
+						<div class="machineInfoElementName">4 土地</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">反应物</div>
+						<div class="machineInfoElementName">1 水</div>
+					</div>
+				</div>
+			</div>
+			<div class="machine" id="machine3" style="display:none;">
+				<div class="machineMainPanel">
+					<div class="machineName">火山</div>
+					<div class="machineValves">
+						<div class="machineValveIngredient" onclick="machineIngredientValveTurn(3)">
+							<div class="machineValveBar" id="machineIngredientValve3"></div>
+						</div>
+						<div class="machineValveReagent" onclick="machineReagentValveTurn(3)">
+							<div class="machineValveBar" id="machineReagentValve3"></div>
+						</div>
+					</div>
+					<div class="machineTanks">
+						<div class="machineTankIngredient"><div class="machineTankBar" id="machineIngredientTank3" style="background-color: #2F681A;"></div></div>
+						<div class="machineTankReagent"><div class="machineTankBar" id="machineReagentTank3" style="background-color: #780A0A;"></div></div>
+					</div>
+				</div>
+				<div class="machineSidePanel">
+					<div class="machineInfo">
+						<div class="machineInfoName">产品</div>
+						<div class="machineInfoElementName" id="machineProductInfo3">4 土地</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">成分</div>
+						<div class="machineInfoElementName">4 土地</div>
+					</div>
+					<div class="machineInfo">
+						<div class="machineInfoName">反应物</div>
+						<div class="machineInfoElementName">1 火</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center; height: 100%; padding-top:6px; padding-bottom:6px; font-size:26px; background-color: #1D1D1D;">升级</div>
+	<div class="container">
+		<div class="upgrade" id="upgrade0" onClick="upgrade(0)" style="display:none;">
+			<div class="upgradeName">我的鼠标坏了</div>
+			<div class="upgradeCost">成本: 2 土地</div>
+			<div class="upgradeDescription">使用土地自动点击</div>
+		</div>
+		<div class="upgrade" id="upgrade1" onClick="upgrade(1)" style="display:none;">
+			<div class="upgradeName">修理液化油箱</div>
+			<div class="upgradeCost">成本: 2 水</div>
+			<div class="upgradeDescription">（我建议在点击之前累积16个水）<br> 液化罐容量X8</div>
+		</div>
+		<div class="upgrade" id="upgrade2" onClick="upgrade(2)" style="display:none;">
+			<div class="upgradeName">调节反应安全措施</div>
+			<div class="upgradeCost">成本: 4 水</div>
+			<div class="upgradeDescription">将反应所需机器的填充率从75％降低到50％</div>
+		</div>
+		<div class="upgrade" id="upgrade3" onClick="upgrade(3)" style="display: none;">
+			<div class="upgradeName">禁用反应安全措施</div>
+			<div class="upgradeCost">成本: 4 空气</div>
+			<div class="upgradeDescription">将反应所需机器的填充率从50％降低到25％</div>
+		</div>
+		<div class="upgrade" id="upgrade4" onClick="upgrade(4)" style="display: none;">
+			<div class="upgradeName">拆除机器内壁</div>
+			<div class="upgradeCost">成本: 4 火</div>
+			<div class="upgradeDescription">(这次升级非常强大)<br>将反应所需机器的填充率从25％降低到0％</div>
+		</div>
+		<div class="upgrade" id="upgrade5" onClick="upgrade(5)" style="display:none;">
+			<div class="upgradeName">春季油罐清洗</div>
+			<div class="upgradeCost">成本: 32 水</div>
+			<div class="upgradeDescription">增加所有油箱x2的容量</div>
+		</div>
+		<div class="upgrade" id="upgrade6" onClick="upgrade(6)" style="display: none;">
+			<div class="upgradeName">吹掉不必要的杂物</div>
+			<div class="upgradeCost">成本: 128 空气</div>
+			<div class="upgradeDescription">进一步增加所有油箱x2的容量</div>
+		</div>
+		<div class="upgrade" id="upgrade7" onClick="upgrade(7)" style="display: none;">
+			<div class="upgradeName">修改机器墙</div>
+			<div class="upgradeCost">成本: 1024 土地</div>
+			<div class="upgradeDescription">所有油箱容量加倍。再次。</div>
+		</div>
+		<div class="upgrade" id="upgrade8" onClick="upgrade(8)" style="display: none;">
+			<div class="upgradeName">重建模拟球体的油罐</div>
+			<div class="upgradeCost">成本: 5120 土地</div>
+			<div class="upgradeDescription">所有储罐的容量x4。</div>
+		</div>
+		<div class="upgrade" id="upgrade9" onClick="upgrade(9)" style="display:none;">
+			<div class="upgradeName">清除输入管道</div>
+			<div class="upgradeCost">成本: 16 水</div>
+			<div class="upgradeDescription">提高机器的传输速度(元素数量的1%)</div>
+		</div>
+		<div class="upgrade" id="upgrade10" onClick="upgrade(10)" style="display: none;">
+			<div class="upgradeName">修理输入管道损坏的部分</div>
+			<div class="upgradeCost">成本: 64 土地</div>元素量)</div>
+		</div>
+		<div class="upgrade" id="upgrade11" onClick="upgrade(11)" style="display: none;">
+			<div class="upgradeName">将输入管道不锈钢 </div>
+			<div class="upgradeCost">成本: 128 空气</div>
+			<div class="upgradeDescription">提高机器的传输率(元素总量的2%)</div>
+		</div>
+		<div class="upgrade" id="upgrade12" onClick="upgrade(12)" style="display: none;">
+			<div class="upgradeName">改进输入管道的设计</div>
+			<div class="upgradeCost">成本: 1024 火</div>
+			<div class="upgradeDescription">提高机器的传输速度(元素数量的5%)</div>
+		</div>
+		<div class="upgrade" id="upgrade13" onClick="upgrade(13)" style="display:none;">
+			<div class="upgradeName">将少量的火转化为催化剂</div>
+			<div class="upgradeCost">成本: 2 火</div>
+			<div class="upgradeDescription">每一种使用的成分，反应产生0% - 0.25%更多的输出</div>
+		</div>
+		<div class="upgrade" id="upgrade14" onClick="upgrade(14)" style="display: none;">
+			<div class="upgradeName">把更多的火变成催化剂</div>
+			<div class="upgradeCost">成本: 256 火</div>
+			<div class="upgradeDescription">每一种使用的成分，反应产生25% - 50%更多的产量</div>
+		</div>
+		<div class="upgrade" id="upgrade15" onClick="upgrade(15)" style="display: none;">
+			<div class="upgradeName">在催化剂周围形成盆地</div>
+			<div class="upgradeCost">成本: 2048 土地</div>
+			<div class="upgradeDescription">为下一次催化剂升级准备空间</div>
+		</div>
+		<div class="upgrade" id="upgrade16" onClick="upgrade(16)" style="display: none;">
+			<div class="upgradeName">充分填充催化剂池</div>
+			<div class="upgradeCost">成本: 2048 火</div>
+			<div class="upgradeDescription">每使用一种成分，反应产生50% - > %更多的输出</div>
+		</div>
+		<div class="upgrade" id="upgrade17" onClick="upgrade(17)" style="display:none;">
+			<div class="upgradeName">掸掉房间周围的栏杆上的灰尘</div>
+			<div class="upgradeCost">成本: 16 空气</div>
+			<div class="upgradeDescription">设定的旋转速度加倍</div>
+		</div>
+		<div class="upgrade" id="upgrade18" onClick="upgrade(18)" style="display: none;">
+			<div class="upgradeName">机油轮</div>
+			<div class="upgradeCost">成本: 128 水</div>
+			<div class="upgradeDescription">设置转速增加</div>
+		</div>
+		<div class="upgrade" id="upgrade19" onClick="upgrade(19)" style="display: none;">
+			<div class="upgradeName">调节安全制动器</div>
+			<div class="upgradeCost">成本: 256 火</div>
+			<div class="upgradeDescription">设置的旋转速度增加更多</div>
+		</div>
+		<div class="upgrade" id="upgrade20" onClick="upgrade(20)" style="display: none;">
+			<div class="upgradeName">设置摩擦零化场</div>
+			<div class="upgradeCost">成本: 1024 空气</div>
+			<div class="upgradeDescription">设置转速最大</div>
+		</div>
+		<div class="upgrade" id="upgrade21" onClick="upgrade(21)" style="display: none;">
+			<div class="upgradeName">构建并行扩展坞</div>
+			<div class="upgradeCost">成本: 2048 土地</div>
+			<div class="upgradeDescription">两台机器同时处于活动状态</div>
+		</div>
+		<div class="upgrade" id="upgrade22" onClick="upgrade(22)" style="display: none;">
+			<div class="upgradeName">建立另一个停靠站</div>
+			<div class="upgradeCost">成本: 5120 土地</div>
+			<div class="upgradeDescription">三台机器将同时处于活动状态</div>
+		</div>
+		<div class="upgrade" id="upgrade23" onClick="upgrade(23)" style="display: none;">
+			<div class="upgradeName">建立另一个停靠站</div>
+			<div class="upgradeCost">成本: 10240 土地</div>
+			<div class="upgradeDescription">四台机器将同时处于活动状态</div>
+		</div>
+		<div class="upgrade" id="upgrade24" onClick="upgrade(24)" style="display: none;">
+			<div class="upgradeName">使用子空间输入系统</div>
+			<div class="upgradeCost">成本: 40960 空气</div>
+			<div class="upgradeDescription">机器不再需要具有单独的输入和工作台</div>
+		</div>
+		<div class="upgrade" id="upgrade25" onClick="upgrade(25)" style="display:none;">
+			<div class="upgradeName">创建元素晶体的副本</div>
+			<div class="upgradeCost">成本: 102400 土地</div>
+			<div class="upgradeDescription">什么都没有</div>
+		</div>
+		<div class="upgrade" id="upgrade26" onClick="upgrade(26)" style="display: none;">
+			<div class="upgradeName">制作水晶输液球</div>
+			<div class="upgradeCost">成本: 102400 水</div>
+			<div class="upgradeDescription">什么都没有</div>
+		</div>
+		<div class="upgrade" id="upgrade27" onClick="upgrade(27)" style="display: none;">
+			<div class="upgradeName">注入晶体元素</div>
+			<div class="upgradeCost">成本: 102400 空气</div>
+			<div class="upgradeDescription">什么都没有</div>
+		</div>
+		<div class="upgrade" id="upgrade28" onClick="upgrade(28)" style="display: none;">
+			<div class="upgradeName">将晶体植入机器中</div>
+			<div class="upgradeCost">成本: 102400 火</div>
+			<div class="upgradeDescription">机罐容量x256</div>
+		</div>
+	</div>
+</div>
+<div id="tab1" style="display: none; padding-left: 19px;">
+	<div class="container" id="canvasHolder">
+		<canvas id="canvasPreview" width=600; height=600; style="background-color: #000000; border:1px solid #FFFFFF;"></canvas>
+	</div>
+</div>
+<div id="tab2" style="display: none; padding-left: 25px;"> 我决定将我对元素的想法和观察记录到这个日志中。
+	<div class="chat" id="chatLog" style="width: 600px;">
+	</div>
+</div>
+<div id="tab3" style="display: none; padding-left: 25px;"> 假设所有重要的数字都显示在这里。将在下一次公开发布中得到改进。
+	<div class="chat">
+		<div class="chatMessageGameplay">鼠标点击做了一些事情:</div>
+		<div class="chatMessageGameplay" id="clicksMade">0</div>
+	</div>
+</div>
+<div id="tab4" style="user-select:text; display: none; padding-left: 25px;"> 由Nagshell开发。你可以用我的电子邮件联系我: nagshell@gmail.com<br><br>我感谢所有的支持/反馈。因为这是我的第一个游戏，你可能会发现我几乎没有任何经验。让我知道怎样才能改善我的孩子。
+
+</div>
+<div id="tab5" style="display: none; padding-left: 25px;"> 想象一下，这里解释了所有的力学原理。
+
+</div>
+<div id="tab6" style="display: none; padding-left: 25px;"> <a class="tabButton"href="https://discord.gg/CjdSuzH">Discord Server</a> <a class="tabButton"href="https://nagshell.github.io/elemental-inception-incremental">主枢纽-包括游戏的第二部分!</a>
+
+</div>
+<p id="test"></p>
+<button class="tabButton" onclick="document.documentElement.scrollTop = 0;">滚到顶部</button>
+</body>
+<script type="application/javascript" src="Messages.js" ></script>
+<script type="application/javascript" src="Elements.js"></script>
+
+
+<!--客服 开始-->
+<script src="https://cdn.jsdelivr.net/gh/g8hh/g8hh.github.io/static/js/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/g8hh/g8hh.github.io/static/css/kf.css" type="text/css" media="screen" charset="utf-8">
+<script src="https://cdn.jsdelivr.net/gh/g8hh/g8hh.github.io/static/js/kf.js"></script>
+<!-- 客服 结束 -->
+
+<!--站长统计-->
+    <div style="display: none">
+        <script type="text/javascript" src="//s19.cnzz.com/z_stat.php?id=1267958737&web_id=1267958737"></script>
+    </div>
+</html>
