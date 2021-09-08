@@ -780,7 +780,7 @@ var lore = {
 		if (!this.locked)
 		{
 			ctx.fillStyle = ctx.strokeStyle;
-			ctx.fillText(this.node.name, x, 10);
+			ctx.fillText(cnItem(this.node.name), x, 10);
 		}
 		ctx.restore();
 	},
@@ -874,7 +874,7 @@ var lore = {
 						}
 						testLine += words[i] + " ";
 					}
-					lines.push(line);
+					lines.push(cnItem(line));
 					this.columnCount = 1 + Math.floor(lines.length / 25);
 					if (lines.length <= 25)
 					{
@@ -893,7 +893,7 @@ var lore = {
 				ctxText.strokeStyle = ctx.strokeStyle;
 				for (i = 0; i < lines.length; i++)
 				{
-					ctxText.fillText(lines[i], 10 + 400 * Math.floor(i / 25), 25 + 20 * (i % 25));
+					ctxText.fillText(cnItem(lines[i]), 10 + 400 * Math.floor(i / 25), 25 + 20 * (i % 25));
 				}
 				for (i = 1; i < this.columnCount; i++)
 				{
@@ -1063,4 +1063,178 @@ function preprocessLore()
 		regionData.hideRegion.action(lore.dataTree.list[0].pane);
 	}
 	regionData.hideRegion.action(lorePane);
+}
+
+var cnItems = {
+    'General': '常规',
+    'Research': '研究',
+    'Logbook': '日志',
+    'Records': '记录',
+    'I began my preparations again. I did not expect that old ': '我又开始准备了。 没想到这么老',
+    'experiments. ': '实验。',
+    'future. For now, I need to find a new place for my ': '未来。 现在，我需要为我的生活找到一个新的地方',
+    'seeing? Well, it’s something I’ll need to investigate in the ': '看到了吗？ 嗯，这是我需要在',
+    'man—who I suspect to be the real Alchemist—to be this ': '男人——我怀疑他是真正的炼金术士——是这个',
+    'hostile and deadly. I need to be much more careful and ': '充满敌意和致命的。 我需要更加小心和',
+    'create defensive measures to protect myself. I doubt he will ': '制定防御措施来保护自己。 我怀疑他会',
+    'miss his mark next time. ': '下次错过他的成绩。',
+    'I still don’t know why I didn’t find any information about the ': '我仍然不知道为什么我没有找到有关该的任何信息',
+    'Golems, let alone their advanced versions. The original ': '魔像，更不用说它们的高级版本了。 原本的',
+    'Golems I discovered represented all 4 Elements known to ': '我发现的魔像代表了已知的所有 4 种元素',
+    'Elementalism, so what were those combined ones? ': '元素论，那么那些组合是什么？',
+    'Why are public books so inaccurate compared to what I was ': '为什么公共书籍与我之前的相比如此不准确',
+    'should be easy to dig out and fortify an underground base. ': '应该很容易挖掘和加固地下基地。',
+    'I decide to create my own laboratory outside the city; it ': '我决定在城外建立自己的实验室； 它',
+    'than before. ': '比以前。',
+    'Elements much more precisely, and on a much larger scale ': '元素更精确，规模更大',
+    'in the ground beneath my feet, and so on. I can also control ': '在我脚下的地面上，等等。 我也能控制',
+    'see how Fire flows above lanterns, how Earth shifts slightly ': '看看火是如何在灯笼上方流动的，地球是如何轻微移动的',
+    'More importantly, I can now ‘feel’ elements. If I focus, I can ': '更重要的是，我现在可以“感受”元素了。 如果我专注，我可以',
+    'some lonely place. ': '一些孤独的地方。',
+    'is my brain malfunctioning, I would rather not collapse in ': '是我的大脑出了毛病，我宁愿不崩溃',
+    'so I still try to eat something each day just to be safe. If this ': '所以为了安全起见，我仍然尝试每天吃点东西。 如果这',
+    'no longer feel tired or hungry. I’m not sure what happened, ': '不再感到疲倦或饥饿。 我不确定发生了什么，',
+    'can I do any manual task I’ve done before with ease, but I ': '我可以轻松完成我以前做过的任何手动任务，但我',
+    'The Globe in my shoulder changed me drastically. Not only ': '我肩上的地球仪彻底改变了我。 不仅',
+    'TO BE RELEASED SOON ': '即将发布',
+    'Currently this section is empty ': '目前这部分是空的',
+    'permanently fused with his right arm. ': '与他的右臂永久融合。',
+    'The Elemental Glove he used during that period has ': '他在那段时间使用的元素手套有',
+    'out what really happened. ': '搞清楚到底发生了什么。',
+    'nothing but one goal - getting back to that place and finding ': '只有一个目标——回到那个地方并找到',
+    'After regaining consciousness, the protagonist was left with ': '恢复意识后，主角只剩下',
+    'brief encounter removed him from the world for 7 months. ': '短暂的相遇使他离开了这个世界 7 个月。',
+    'seeing the silhouette of an old man, he got kicked out. That ': '看到一个老者的身影，他被踢了出去。 那',
+    'he found himself in a space filled with bright light. But after ': '他发现自己身处一个充满明亮光线的空间。 但是之后',
+    'discovery of Golems. After touching all four Golems at once, ': '魔像的发现。 一次接触所有四个魔像后，',
+    'books on the topic and some old tools; this leads him to the ': '有关该主题的书籍和一些旧工具； 这导致他到',
+    'Elementalism. He taught himself with nothing but a few ': '元素论。 他只用了一些自学',
+    'Our protagonist with a tragic backstory delved into the art of ': '我们的主角有着悲惨的背景故事，深入研究了',
+    'I lost consciousness while manipulating the Earth inside the ': '我在操纵 地 内部时失去了知觉',
+    'rocks of my soon-to-be base. I woke up 2 days later, without ': '我即将成为基地的岩石。 2天后我醒了，没有',
+    'even a slight feeling of what was wrong. I think my mind just ': '甚至有一点点不对劲的感觉。 我想我的心只是',
+    'shut off after working for a week or so. I’ll try to take a break ': '工作一周左右后关闭。 我会试着休息一下',
+    'every day or so to calm down and simulate sleep. Hopefully, ': '每天左右冷静下来，模拟睡眠。 希望，',
+    'that’ll be enough. ': '这样就足够了。',
+    'shoulder. ': '肩膀。',
+    'globe, the remains of Infernal, was embedded into his left ': '地球仪，地狱火的遗骸，被嵌入他的左边',
+    'ever and discovered another change to his body. A glass ': '并发现了他身体的另一个变化。 一个玻璃',
+    'machines. A few hours later, he woke up feeling better than ': '机器。 几个小时后，他醒来时感觉比',
+    'saved him by impaling him into the wreckage of his ': '通过将他刺入他的残骸中拯救了他',
+    'Our protagonist should have been disintegrated, but Infernal ': '我们的主角应该已经解体了，但是地狱',
+    'face, tried to kill our protagonist, before disappearing again. ': '脸，试图杀死我们的主角，然后再次消失。',
+    'However, the old man intervened and, with a sad look on his ': '然而，老人介入了，他的脸上带着悲伤的表情。',
+    'Elements, caused the Infernal Golem to become sentient. ': '元素，使地狱火魔像变得有知觉。',
+    'He called one of them ‘Infernal’ and, by feeding it with ': '他称其中一个为“地狱火”，并通过喂它',
+    'Golems lead to him suddenly discovering Merged Golems. ': '魔像导致他突然发现了合并魔像。',
+    'began experimenting once again. Trying to recreate the ': '又开始尝试了。 试图重新创建',
+    'open small rifts that ‘produced’ Elements, our protagonist ': '打开“产生”元素的小裂缝，我们的主角',
+    'With much better equipment, and his arm’s new ability to ': '有了更好的装备，以及他手臂的新能力',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    '': '',
+    'Discovery': '发现',
+    'Search': '搜索',
+    'Ups and Downs': '起伏',
+    'Surface': '表面',
+    'Underground': '地下',
+    'Findings': '调查',
+    'Meeting': '会议',
+    'Way back': '回来的路',
+    'Stage Two': '阶段 2',
+    'Stage One': '阶段 1',
+    'The Past': '往事',
+    'Opal': '蛋白石',
+    'Summer, 363': '363年 夏季',
+    'Spring, 363': '363年 春季',
+    '10th Day': '第 10 天',
+    '71th Day': '第 71 天',
+    '73rd Day': '第 73 天',
+    '79th Day': '第 79 天',
+    '26th Day': '第 26 天',
+    '14th Day': '第 14 天'
+    
+
+};
+
+function cnItem(text) {
+    //数组里面有的，返回中文
+    for (var i in cnItems) {
+        if (text == i) {
+            return cnItems[i];
+        }
+    }
+    //数组里面没有的，原样返回
+    for (var i in cnItems) {
+        if (text != i) {
+            console.log("需汉化的英文Item：" + text);
+            return text;
+        }
+    }
 }
