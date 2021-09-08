@@ -1,28 +1,28 @@
 var jsonMessages = {
 	"tutorialMessage" : {
-		"flush" : "If flush is set to true message will clear chatbox before adding its content and reset chatTrimmer delays",
+		"flush" : "如果 红晕 设置为 true 消息将在添加其内容之前清除聊天框并重置 聊天修剪器 延迟",
 		
-		"loreText" : "What will be added to current content of respective chatbox (after flushing)",
-		"loreFreezeDuration": "Period of time in ms during which chatTrimmer won't touch respective chatbox. negative values are permament disable (until next message)",
-		"gameplayText" : "Same as above",
-		"gameplayFreezeDuration": "Same as above",
+		"loreText" : "将添加到相应聊天框的当前内容中的内容（刷新后）",
+		"loreFreezeDuration": "聊天 修剪器 不会接触相应聊天机器人的时间段（以毫秒为单位）。 负值是永久禁用（直到下一条消息）",
+		"gameplayText" : "和上面一样",
+		"gameplayFreezeDuration": "和上面一样",
 		
 		"activeElements" : "Gameplay and chatTrimmer are frozen until all active elements are completed",
 		"firstActiveElement" : "button/progressBar/none - which element is activated first",
 		"progressBar" : {
-			"barText": "text appearing on bar",
-			"duration": "duration in ms of progress bar",
+			"barText": "出现在栏上的文字",
+			"duration": "进度条的持续时间（以毫秒为单位）",
 		},
 		"buttonAvailable": "If set to true will make button visible and clickable once",
 		
 		"chainedMessage": "If this exists then after this msg is complete next message will fire instead of resuming gameplay",
 		"chainedMessageDelay": "Delay between finish of this msg and firing of the next - gameplay is still frozen, but chatTrimmer is not",
 		
-		"eventId": "Id of an event that will fire as soon as this message appears"
+		"eventId": "出现此消息时将立即触发的事件 ID"
 	},
 	"outro0" : {
 		"flush" : true,
-		"loreText" : "Legend tells that knowledge possessed by Alchemist came from combining four Elements together.",
+		"loreText" : "传说炼金术士所拥有的知识来自于四种元素的结合。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -35,7 +35,7 @@ var jsonMessages = {
 	},
 	"outro1" : {
 		"flush" : true,
-		"loreText" : "So my plan at first was to touch every Orb at the same time. Technically the Glove can only hold one element, but this way I can connect to all elements at the same time. I've tried it before. Complete failure - the interactions between elements caused all Orbs to empty themselves.",
+		"loreText" : "所以我最初的计划是同时触摸每个 宝珠。 从技术上讲，手套只能容纳一个元素，但这样我可以同时连接到所有元素。 我以前试过。 完全失败 - 元素之间的相互作用导致所有 Orb 自行清空。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -48,7 +48,7 @@ var jsonMessages = {
 	},
 	"outro2" : {
 		"flush" : true,
-		"loreText" : "But now they aren't really Orbs any more. I removed all four Golems from their pedestals and put them in small circle.",
+		"loreText" : "但现在它们不再是真正的球体了。 我从他们的底座上取下了所有四个魔像，并将它们放在一个小圆圈中。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -61,7 +61,7 @@ var jsonMessages = {
 	},
 	"outro3" : {
 		"flush" : true,
-		"loreText" : "Alright, I'm ready. I will take my Elemental Glove and touch each Golem with one of my fingers. Hopefully, the combined elements will be able to heal my father.",
+		"loreText" : "好的，我准备好了。 我会拿起我的元素手套，用我的一根手指触摸每个魔像。 希望结合的元素能够治愈我的父亲。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -78,7 +78,7 @@ var jsonMessages = {
 	},
 	"outro4" : {
 		"flush" : true,
-		"loreText" : "Blinding light. Visions. Old person running towards me. A loud shout, piercing every cell of my existence.",
+		"loreText" : "刺眼的光。 愿景。 老人向我跑来。 一声巨响，穿透了我存在的每一个细胞。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -91,7 +91,7 @@ var jsonMessages = {
 	},
 	"outro5" : {
 		"flush" : true,
-		"loreText" : "\"Thou shalt not meddle with Elements! What have you done?! Go back where you came from, and never do this again!\"",
+		"loreText" : "“你不能干涉元素！你做了什么？！回到你原来的地方，再也不这样做了！”",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -104,7 +104,7 @@ var jsonMessages = {
 	},
 	"outro6" : {
 		"flush" : true,
-		"loreText" : "Darkness. Quiet and comforting.",
+		"loreText" : "黑暗。 安静和安慰。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -121,7 +121,7 @@ var jsonMessages = {
 	},
 	"outro7" : {
 		"flush" : true,
-		"loreText" : "I woke up slowly. I was still in attic of my old family house. At least the walls look similar. Every single movable piece in the room has disappeared. What happened? What happened?!",
+		"loreText" : "我慢慢醒来。 我还在我老房子的阁楼里。 至少墙壁看起来很相似。 房间里的每一个可移动的部件都消失了。 发生了什么？ 发生了什么？！",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -134,7 +134,7 @@ var jsonMessages = {
 	},
 	"outro8" : {
 		"flush" : true,
-		"loreText" : "Nothing.<br>I don't remember what happened after hearing that shout.<br>I might not remember, but I know one thing certainly did change.<br>The Elemental Glove I used is now fused with my whole arm. I cannot take it off. I don't need to take it off. I think I can use it to go back there. To find out what lies on the other side.",
+		"loreText" : "什么都没有。<br>我不记得听到那个叫声后发生了什么。<br>我可能不记得了，但我知道一件事确实发生了变化。<br>我使用的元素手套现在与我的整个手臂融合在一起。 我不能把它取下来。 我不需要把它取下来。 我想我可以用它回到那里。 找出另一边是什么。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -147,14 +147,14 @@ var jsonMessages = {
 	},
 	"outro9" : {
 		"flush" : true,
-		"loreText" : "Wait, no. I try to stop my galloping thoughts and focus. I have to go see my father. He's the whole reason I was able to get so far in my life. I can't leave him now while he's at his weakest. I need to go. I need to move. Why can't I move?!",
+		"loreText" : "等等，没有。 我试着停止我飞驰的想法和注意力。 我得去看我父亲。 他是我能够在我的生活中走这么远的全部原因。 在他最虚弱的时候，我现在不能离开他。 我要走了。 我需要移动。 为什么我动不了？！",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "You are trying to move. It's not looking good.",
+			"barText": "你正试图移动。 看起来不太好。",
 			"duration": 20000
 		},
 		"buttonAvailable": true,
@@ -164,7 +164,7 @@ var jsonMessages = {
 	},
 	"outro10" : {
 		"flush" : true,
-		"loreText" : "After what felt like eternity I saw small twitch in my left thumb. I think I'll be alright. I just need few minutes to recover, and I'll go out.",
+		"loreText" : "在感觉像是永恒之后，我看到我的左手拇指有轻微的抽搐。 我想我会没事的。 我只需要几分钟恢复，我就出去。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -177,7 +177,7 @@ var jsonMessages = {
 	},
 	"outro11" : {
 		"flush" : true,
-		"loreText" : "Thank you for playing intro stage of my game. \\('_' ) <br><br> You can always refresh the page to reset.",
+		"loreText" : "感谢您玩我游戏的介绍阶段。 \\('_' ) <br><br> 您可以随时刷新页面以重置。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -423,14 +423,14 @@ var jsonMessages = {
 	},
 	"reset0" : {
 		"flush" : true,
-		"loreText" : "I-I... I think I messed up. Nothing said that there was a capacity limit of Elemental Orb. It was supposed to condense Element and transfer excess to another plane of existence in case of overflow.<br><br>But something else happened. There was a big implosion inside the Elemental Orb and soon after, a huge wave of unleashed Elements sent me flying across the room.",
+		"loreText" : "我、我……我想我搞砸了。 没说元素珠有容量限制。 它应该浓缩元素并在溢出的情况下将多余的转移到另一个存在位面。<br><br>但发生了其他事情。 元素宝珠内部发生了巨大的内爆，不久之后，释放出的巨大元素浪潮让我飞过房间。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "progressBar",
 		"progressBar" : {
-			"barText": "Getting out of the human shaped hole in the wall.",
+			"barText": "从墙上的人形洞里出来。",
 			"duration": 25000
 		},
 		"buttonAvailable": true,
@@ -440,9 +440,9 @@ var jsonMessages = {
 	},
 	"reset1" : {
 		"flush" : true,
-		"loreText" : "Aftermath of the situation: My body has all its pieces. At least I think so.<br>Element inside every Orb disappeared. That's bad, I worked hard to collect so much of them.<br>Machines seem to be fine, but my crystals imploded, slightly damaging my tanks. I guess I'll need to upgrade the machine's tanks again.",
+		"loreText" : "情况的后果：我的身体已经分崩离析。 至少我是这么认为的。<br>每个 宝珠 中的元素都消失了。 这很糟糕，我努力收集了这么多。<br>机器看起来很好，但我的水晶爆炸了，对我的坦克造成了轻微的损坏。 我想我需要再次升级机器的坦克。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Repair damaged components and get everything back in place.",
+		"gameplayText" : "修复损坏的组件并将所有部件恢复原状。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -453,9 +453,9 @@ var jsonMessages = {
 	},
 	"reset1.1" : {
 		"flush" : true,
-		"loreText" : "Now, for the Crystals inside Orbs themselves. Hm... Strange. Crystal bases are left intact, but the compression crystals inside orb that caused implosion are vibrating at high rates. I need to repair my machinery and test this crystal out.",
+		"loreText" : "现在，对于 宝珠 内部的水晶。 嗯……奇怪。 水晶底座完好无损，但导致内爆的球体内部的压缩水晶正在高速振动。 我需要修理我的机器并测试这个晶体。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Repair damaged components and get everything back in place.",
+		"gameplayText" : "修复损坏的组件并将所有部件恢复原状。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -470,9 +470,9 @@ var jsonMessages = {
 	},
 	"reset2" : {
 		"flush" : true,
-		"loreText" : "Alright, my whole setup is back in working order. Lets start filling Orbs again. Certainly there is more to them than I thought.",
+		"loreText" : "好的，我的整个设置已恢复正常工作。 让我们再次开始填充 宝珠。 当然，他们比我想象的要多得多。",
 		"loreFreezeDuration": 2000,
-		"gameplayText" : "Start filling Orbs again.",
+		"gameplayText" : "再次开始填充 宝珠。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -482,9 +482,9 @@ var jsonMessages = {
 	},
 	"reset3" : {
 		"flush" : true,
-		"loreText" : "Another implosion. Surprised I walk back into the room and check on the Orbs again.<br><br>The vibrating crystal transformed. I never saw anything like this in books about Elemental manipulation. The Orb still holds Element like before, but its compression crystal expanded ten-fold. I wonder what will happen when I fill it again? I need to do few adjustments and I'll let machines run once more.",
+		"loreText" : "另一个内爆。 我很惊讶地走回房间再次检查 宝珠。<br><br>振动的水晶发生了变化。 我从来没有在关于元素操纵的书中看到过这样的东西。 宝珠依旧像以前一样持有元素，但它的压缩晶体扩大了十倍。 我想知道当我再次填充它时会发生什么？ 我需要做一些调整，我会让机器再次运行。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Put transformed Orb back on pedestal and fill it with a bit of its Element.",
+		"gameplayText" : "将转换后的 宝珠 放回基座上，并用它的一些元素填充它。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -499,9 +499,9 @@ var jsonMessages = {
 	},
 	"reset4" : {
 		"flush" : true,
-		"loreText" : "The Expanded Crystal lit up for a second, then started generating its Element by itself. Did I just reverse the overflow process!? Well, I still wonder what will happen if I fill it to the point of imploding again...",
+		"loreText" : "膨胀水晶亮了一秒，然后开始自行生成元素。 我是不是刚刚反转了溢出过程！？ 好吧，我仍然想知道如果我将它填充到再次内爆的程度会发生什么......",
 		"loreFreezeDuration": 2000,
-		"gameplayText" : "Try to fill the Orb with the expanded crystal.",
+		"gameplayText" : "尝试用膨胀的水晶填充 宝珠。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -511,14 +511,14 @@ var jsonMessages = {
 	},
 	"reset5" : {
 		"flush" : true,
-		"loreText" : "Another Orb imploded, but it took noticeably longer this time. I have no idea what that means for the future, but for now I just have to keep going. I don't have any other ideas.",
+		"loreText" : "另一个 宝珠 爆炸了，但这次花费的时间明显更长。 我不知道这对未来意味着什么，但现在我必须继续前进。 我没有其他想法。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "I made some preparations so I was safe this time.",
+		"gameplayText" : "我做了一些准备，所以这次我是安全的。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "Reinstalling machines back in their docks.",
+			"barText": "将机器重新安装回他们的码头。",
 			"duration": 6000
 		},
 		"buttonAvailable": true,
@@ -528,9 +528,9 @@ var jsonMessages = {
 	},
 	"reset6" : {
 		"flush" : true,
-		"loreText" : "A few small adjustments and few big impact walls around each Orb made out of debris let me dissipate most of the implosion aftershock. Thanks to that repairs took me way less time.",
+		"loreText" : "每个由碎片制成的 宝珠 周围的一些小调整和几个大冲击墙让我消散了大部分内爆余震。 多亏了维修，我花了更少的时间。",
 		"loreFreezeDuration": 2000,
-		"gameplayText" : "Fill Orb with expanded crystal.",
+		"gameplayText" : "用膨胀的水晶填充 宝珠。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -540,9 +540,9 @@ var jsonMessages = {
 	},
 	"reset7" : {
 		"flush" : true,
-		"loreText" : "I thought I only began to scratch capacity of new Orb, but it seems an expanding crystal had the reverse effect on a Orb's capacity threshold. This time overflow did not cause implosion, but the compression crystal fully merged with the Orb itself.<br>I need to test my newest accidental creation.",
+		"loreText" : "我以为我只是开始刮新 宝珠 的容量，但似乎膨胀的晶体对 宝珠 的容量阈值产生了相反的影响。 这次溢出并没有引起内爆，而是压缩水晶与宝珠本身完全融合。<br>我需要测试我最新的意外创造。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Test transformed Orb in safe environment.",
+		"gameplayText" : "在安全的环境中测试转化的 宝珠。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -557,14 +557,14 @@ var jsonMessages = {
 	},
 	"reset8" : {
 		"flush" : true,
-		"loreText" : "Are those... eyes? This Orb has started to have gradual changes in its shape. Now it looks more like a tear, and Element inside swirls in two small orbs.<br>I feel like they looking at me. I feel... strange about it. Anyway it seems inside the Orb it is fully connected to another plane and is able to channel insane amounts of Element both ways. Input pipes coming out of it instantly fill and also containers I provide it. Well, that's certainly helpful.",
+		"loreText" : "那是……眼睛？ 这颗宝珠的形状开始逐渐发生变化。 现在它看起来更像是一滴眼泪，里面的 元素 变成了两个小球体。<br>我觉得他们在看着我。 我觉得……很奇怪。 无论如何，它似乎在 宝珠 内部完全连接到另一个位面，并且能够双向引导疯狂数量的元素。 从它出来的输入管道会立即填满，我还提供容器。 嗯，这当然有帮助。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "Testing phase 2/2.",
+			"barText": "测试阶段 2/2.",
 			"duration": 4000
 		},
 		"buttonAvailable": true,
@@ -574,9 +574,9 @@ var jsonMessages = {
 	},
 	"reset9" : {
 		"flush" : true,
-		"loreText" : "Tests complete. I guess I should try to turn rest of the Orbs into this new entity. I decided to name it \"Golem\". Time to enable my machines once again.",
+		"loreText" : "测试完成。 我想我应该尝试将其余的 宝珠 变成这个新实体。 我决定将它命名为“魔像”。 是时候再次启用我的机器了。",
 		"loreFreezeDuration": 2000,
-		"gameplayText" : "Overflow one of the remaining Orbs",
+		"gameplayText" : "溢出剩余的球体之一",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -584,9 +584,9 @@ var jsonMessages = {
 	},
 	"reset10" : {
 		"flush" : true,
-		"loreText" : "Another Orb transformed into a Golem. I need to continue doing the same with remaining Orbs.",
+		"loreText" : "另一个宝珠变成了魔像。 我需要继续对剩余的球体做同样的事情。",
 		"loreFreezeDuration": 2000,
-		"gameplayText" : "Overflow one of the remaining Orbs",
+		"gameplayText" : "溢出剩余的球体之一",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -594,7 +594,7 @@ var jsonMessages = {
 	},
 	"reset11" : {
 		"flush" : true,
-		"loreText" : "I've transformed each Orb into their Golem state. It's time.",
+		"loreText" : "我已将每个 宝珠 转换为它们的 魔像 状态。 是时候了。",
 		"loreFreezeDuration": -1,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -617,7 +617,7 @@ var jsonMessages = {
 		"eventId": "theOutro"
 	},
 	"pun1" : {
-		"loreText" : "<br><br><br>Suddenly, nothing of particular interest happened.",
+		"loreText" : "<br><br><br>突然之间，没有什么特别感兴趣的事情发生。",
 		"loreFreezeDuration": 35000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": 0,
@@ -625,7 +625,7 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"pun2" : {
-		"loreText" : "<br><br><br>Before all this I tried fishing. Didn't go swimmingly well.<br>Who would've thought that you can't find undiscovered medicine on the bottom of the river.",
+		"loreText" : "<br><br><br>在这一切之前，我尝试过钓鱼。 游泳并不顺利。<br>谁会想到在河底找不到未被发现的药物。",
 		"loreFreezeDuration": 35000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": 0,
@@ -634,9 +634,9 @@ var jsonMessages = {
 	},
 	"base0" : {
 		"flush" : true,
-		"loreText" : "The base of Earth Orb has been filled. Now I can truly start filling it with Earth.",
+		"loreText" : "土宝珠的底部已被填满。 现在我可以真正开始用地球填充它了。",
 		"loreFreezeDuration": 1000,
-		"gameplayText" : "Also first upgrade appeared at the bottom of the page.",
+		"gameplayText" : "第一次升级也出现在页面底部。",
 		"gameplayFreezeDuration": 1000,
 		
 		"firstActiveElement" : "button",
@@ -644,16 +644,16 @@ var jsonMessages = {
 	},
 	"base1" : {
 		"flush" : true,
-		"loreText" : "The Water Orb's base is complete. Finally I should be able to use full potential of Liquefier.",
+		"loreText" : "水球的底座已经完成。 最后，我应该能够充分利用 液化器 的潜力。",
 		"loreFreezeDuration": 4000,
-		"gameplayText" : "Fully fill Liquefier reagent tank",
+		"gameplayText" : "将液化器试剂罐装满",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "none"
 	},
 	"base2" : {
 		"flush" : true,
-		"loreText" : "The Air Orb is online.",
+		"loreText" : "气 宝珠 已上线。",
 		"loreFreezeDuration": 2000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -662,7 +662,7 @@ var jsonMessages = {
 	},
 	"base3" : {
 		"flush" : true,
-		"loreText" : "Fire Orb activated. With the power of Fire all machines should be able to work automatically at long last.",
+		"loreText" : "火宝珠激活。 有了 火 的力量，所有机器终于应该能够自动工作了。",
 		"loreFreezeDuration": 4000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -671,9 +671,9 @@ var jsonMessages = {
 	},
 	"elementGathered0" : {
 		"flush" : true,
-		"loreText" : "With increasing supplies of Earth I should start thinking about activating another Orb. <br><br>Under rusted sheets near the Orbs I found a Liquefier. It's slightly damaged, but should work nonetheless.",
+		"loreText" : "随着土供应的增加，我应该开始考虑激活另一个 宝珠。 <br><br>在宝珠附近生锈的床单下，我发现了一个液化器。 它有轻微损坏，但应该可以工作。",
 		"loreFreezeDuration": 5000,
-		"gameplayText" : "Setup machine on docking station.",
+		"gameplayText" : "在扩展坞上安装机器。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
@@ -688,7 +688,7 @@ var jsonMessages = {
 	},
 	"elementGathered0.2" : {
 		"flush" : true,
-		"loreText" : "Machine's ready.<br>I should open the input valve and hopefully Earth should start flowing into it.",
+		"loreText" : "机器准备好了。<br>我应该打开输入阀，希望土开始流入它。",
 		"loreFreezeDuration": 4000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -699,14 +699,14 @@ var jsonMessages = {
 	},
 	"elementGathered2" : {
 		"flush" : true,
-		"loreText" : "With a slow, but steady way of getting of Air a few other upgrades have become available.<br><br>I also found parts of another machine. While over half of it is missing, I think I should be able to find replacements for them.",
+		"loreText" : "通过缓慢但稳定的获取 气 的方式，还可以进行其他一些升级。<br><br>我还找到了另一台机器的部件。 虽然其中一半以上丢失了，但我想我应该能够找到替代品。",
 		"loreFreezeDuration": 5000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "Searching for another set of machine parts.",
+			"barText": "正在寻找另一套机器零件。",
 			"duration": 6000
 		},
 		"buttonAvailable": true,
@@ -716,7 +716,7 @@ var jsonMessages = {
 	},
 	"elementGathered2.2" : {
 		"flush" : true,
-		"loreText" : "And another machine's ready. I found replacement parts that are good enough in the workshop of my father.<br><br> With a Combustor I should be able to produce Fire. Soon I'll have the missing reagent for my machines.",
+		"loreText" : "另一台机器准备好了。 我在我父亲的车间找到了足够好的替换零件。<br><br> 有了燃烧器，我应该能够生产火。 很快我的机器就会有丢失的试剂。",
 		"loreFreezeDuration": 8000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -727,7 +727,7 @@ var jsonMessages = {
 	},
 	"elementGathered3" : {
 		"flush" : true,
-		"loreText" : "In the center of the room a new piece activated - a Reaction Catalyst. It seems that fire inside it increases efficiency of reactions in machines.",
+		"loreText" : "在房间的中央，一个新的部件被激活了——反应催化剂。 内部的火似乎提高了机器反应的效率。",
 		"loreFreezeDuration": 5000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -735,32 +735,32 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"upgradeBought0" : {
-		"loreText" : "<br>Now I don't need to fill Earth manually. What a relief.",
+		"loreText" : "<br>现在我不需要手动填充土。 终于解脱了。",
 		"loreFreezeDuration": 5000,
-		"gameplayText" : " | Autoclicker will get slightly better as the game progresses",
+		"gameplayText" : " | 随着游戏的进行，自动点击器会变得更好",
 		"gameplayFreezeDuration": 5000,
 		
 		"firstActiveElement" : "none"
 	},
 	"upgradeBought2" : {
 		"flush" : true,
-		"loreText" : "While I was tinkering with reaction regulators I noticed two halves of another machine laying in the corner. I think with a bit of spare parts lying around I could assemble it myself.",
+		"loreText" : "当我修补反应调节器时，我注意到另一台机器的两半放在角落里。 我想如果周围有一些备件，我可以自己组装。",
 		"loreFreezeDuration": 5000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "Searching for machine parts.",
+			"barText": "寻找机器零件。",
 			"duration": 4000
 		},
 		"buttonAvailable": true
 	},
 	"upgradeBought2.2" : {
 		"flush" : true,
-		"loreText" : "The Boiler is ready. It will help me with creating Air. Sadly to automate reaction I'll need Fire, so for the time being only a manual method will be available.",
+		"loreText" : "锅炉准备好了。 它将帮助我创建 气。 可悲的是，为了自动化反应，我需要 火，所以暂时只能使用手动方法。",
 		"loreFreezeDuration": 9000,
-		"gameplayText" : "Fill the Boiler with some Water.",
+		"gameplayText" : "用一些水装满锅炉。",
 		"gameplayFreezeDuration": 16000,
 		
 		"firstActiveElement" : "none",
@@ -769,9 +769,9 @@ var jsonMessages = {
 	},
 	"upgradeBought13" : {
 		"flush" : true,
-		"loreText" : "For the longest time I thought it was a decoration. A small volcano made with brass alloys. Apparently it's machine.<br>If I upgrade the Reaction Catalyst once more I should be able to make a positive feedback loop to multiply my Earth supply.",
+		"loreText" : "很长一段时间，我认为这是一种装饰。 一个用黄铜合金制成的小火山。 显然是机器。<br>如果我再次升级反应催化剂，我应该能够建立一个正反馈循环来增加我的地球供应。",
 		"loreFreezeDuration": 5000,
-		"gameplayText" : "I suggest pushing for the next reaction catalyst upgrade before using volcano.",
+		"gameplayText" : "我建议在使用火山之前推动下一次反应催化剂升级。",
 		"gameplayFreezeDuration": 15000,
 		
 		"firstActiveElement" : "button",
@@ -779,7 +779,7 @@ var jsonMessages = {
 	},
 	"upgradeBought24" : {
 		"flush" : true,
-		"loreText" : "After sub-space breakthroughs my supply of elements will increase drastically. With sheer amount of Elements I can use I might try creating my own compression crystals. <br><br>It gave me interesting new idea...",
+		"loreText" : "在子空间突破后，我的元素供应将急剧增加。 凭借我可以使用的大量元素，我可能会尝试创建自己的压缩晶体。 <br><br>它给了我有趣的新想法...",
 		"loreFreezeDuration": 25000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -789,14 +789,14 @@ var jsonMessages = {
 	},
 	"machineThresholdAmount-0" : {
 		"flush" : true,
-		"loreText" : "I realized few things about Liquefier. Once Earth flowed into its internal tank, the whole machine started rotating on a track that goes around the whole room.<br><br> While it's moving it can gather required Element from the pipes. Of course its valve need to be open too. And when it reached a dock it stops there for a while. It seems that the reaction can only occur when docked.<br><br>Sadly it seems that without reagent it is not going to do anything anyway.",
+		"loreText" : "我意识到关于液化器的一些事情。 一旦地球流入其内部水箱，整个机器就开始在环绕整个房间的轨道上旋转。<br><br> 在移动时，它可以从管道中收集所需的元素。 当然它的阀门也需要打开。 当它到达码头时，它会在那里停一会儿。 似乎反应只能在对接时发生。<br><br>遗憾的是，如果没有试剂，它似乎什么也做不了。",
 		"loreFreezeDuration": -1,
-		"gameplayText" : "Proceed only after reading lore above. Machines are quite complicated.",
+		"gameplayText" : "只有在阅读上述知识后才能继续。 机器相当复杂。",
 		"gameplayFreezeDuration": -1,
 		
 		"firstActiveElement" : "button",
 		"progressBar" : {
-			"barText": "Pondering about ways of obtaining Water.",
+			"barText": "思考获取水的方法。",
 			"duration": 7000
 		},
 		"buttonAvailable": true,
@@ -806,9 +806,9 @@ var jsonMessages = {
 	},
 	"machineThresholdAmount-0.2" : {
 		"flush" : true,
-		"loreText" : "I think I came up with a way of manually forcing a reaction using my Glove without the use of reagent.<br><br>It's going to be inefficient, but I can turn 4 Earth inside the Liquefier into some Water by tapping the Water Orb.",
+		"loreText" : "我想我想出了一种不使用试剂而使用我的手套手动强制反应的方法。<br><br>这将是低效的，但我可以通过轻敲水将液化器内的 4 个地球变成一些水 球体。",
 		"loreFreezeDuration": 16000,
-		"gameplayText" : "Try to fill Water Orb after Liquefier fills up.",
+		"gameplayText" : "在液化器装满后尝试装满水球。",
 		"gameplayFreezeDuration": 16000,
 		
 		"firstActiveElement" : "none",
@@ -816,7 +816,7 @@ var jsonMessages = {
 		"eventId": "unlockElement1"
 	},
 	"machineThresholdAmount-1" : {
-		"loreText" : "<br>The Boiler requires Fire to run, but my manual method should still be viable. 4 Water in the Boiler will turn into some Air.",
+		"loreText" : "<br>锅炉 需要 火 才能运行，但我的手动方法应该仍然可行。 4 锅炉中的水会变成一些空气。",
 		"loreFreezeDuration": 10000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -824,7 +824,7 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"machineThresholdAmount-2" : {
-		"loreText" : "<br>It seems that the end of manual grinding is near. 4 Air in the Combustor will turn into some Fire.",
+		"loreText" : "<br>看来手工打磨的末日已经临近了。 4 燃烧室中的空气会变成一些火焰。",
 		"loreFreezeDuration": 10000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -832,7 +832,7 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"machineActivated0" : {
-		"loreText" : "<br>Yes! It works! Now I can accumulate Water with 100% efficiency. 4 Earth and 1 Water => 4 Water means that overall I still lose some.<br>But with increased supplies of Water I can start thinking about upgrading the Liquefier and working towards my next Orb",
+		"loreText" : "<br>是的！ 有用！ 现在我可以以 100% 的效率积水。 4 土和 1 水 => 4 水意味着总体而言我仍然会损失一些。<br>但是随着水供应的增加，我可以开始考虑升级液化器并为我的下一个 宝珠 努力",
 		"loreFreezeDuration": 10000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": 1,
