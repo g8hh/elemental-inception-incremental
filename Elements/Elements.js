@@ -607,19 +607,19 @@ function runEvent(eventId) {
 			unlockedMachines++;
 			
 			document.getElementById("machineProductInfo0").innerHTML="5 水";
-			document.getElementById("machineProductInfo1").innerHTML="5 空气";
+			document.getElementById("machineProductInfo1").innerHTML="5 气";
 			document.getElementById("machineProductInfo2").innerHTML="5 火";
 			document.getElementById("machineProductInfo3").innerHTML="5 地";
 			break;
 		case "upgradeBought14":
 			document.getElementById("machineProductInfo0").innerHTML="6 水";
-			document.getElementById("machineProductInfo1").innerHTML="6 空气";
+			document.getElementById("machineProductInfo1").innerHTML="6 气";
 			document.getElementById("machineProductInfo2").innerHTML="6 火";
 			document.getElementById("machineProductInfo3").innerHTML="6 地";
 			break;
 		case "upgradeBought16":
 			document.getElementById("machineProductInfo0").innerHTML="8 水";
-			document.getElementById("machineProductInfo1").innerHTML="8 空气";
+			document.getElementById("machineProductInfo1").innerHTML="8 气";
 			document.getElementById("machineProductInfo2").innerHTML="8 火";
 			document.getElementById("machineProductInfo3").innerHTML="8 地";
 			break;

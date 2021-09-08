@@ -816,7 +816,7 @@ var jsonMessages = {
 		"eventId": "unlockElement1"
 	},
 	"machineThresholdAmount-1" : {
-		"loreText" : "<br>锅炉 需要 火 才能运行，但我的手动方法应该仍然可行。 4 锅炉中的水会变成一些空气。",
+		"loreText" : "<br>锅炉 需要 火 才能运行，但我的手动方法应该仍然可行。 4 锅炉中的水会变成一些气。",
 		"loreFreezeDuration": 10000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -824,7 +824,7 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"machineThresholdAmount-2" : {
-		"loreText" : "<br>看来手工打磨的末日已经临近了。 4 燃烧室中的空气会变成一些火焰。",
+		"loreText" : "<br>看来手工打磨的末日已经临近了。 4 燃烧室中的气会变成一些火焰。",
 		"loreFreezeDuration": 10000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
