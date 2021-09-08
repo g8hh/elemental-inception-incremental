@@ -2082,7 +2082,7 @@ var functionData = {
 	},
 	"mainHub" : function(oC,arg1) {
 		saveData();
-		window.location.href = "http://likexia.gitee.io/elemental-inception-incremental";
+		window.location.href = "/elemental-inception-incremental";
 	},
 	"patreonLink" : function(oC,arg1) {
 		window.open('https://www.patreon.com/user?u=12559765', '_blank');
@@ -2106,7 +2106,7 @@ var functionData = {
 		var tempElem = document.getElementById("clipbordElement");
 		tempElem.style.display = '';
 		tempElem.value='';
-		alert("Copy your data into text-box below game window and press accept after that.");
+		alert("将您的数据复制到游戏窗口下方的文本框中，然后按接受。");
 		document.getElementById("clipboardAccept").style.display = '';
 		document.getElementById("clipboardCancel").style.display = '';
 	},
