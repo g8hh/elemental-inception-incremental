@@ -2,88 +2,88 @@ var lore = {
 	"loreMessages" : {
 		"start0" : {
 			"text" :
-				"After a few days of tinkering with Elements I discovered Golems.\n"+
-				"Touching all of them at the same time created some sort of bright flash.\n"+
-				"I saw an old man running towards me, and his shout rendered me unconscious.\n"+
-				"Later on I woke up in the middle of the attic, but everything else there was gone.\n\n"+
-				"A few hours later I recovered enough to move again.\n"+
-				"Walking out of the house presented me with another surprise.\n"+
-				"It appears I was there for a long time. Looking at the date on the freshest newspaper...\n"+
-				"7 months ago I went out looking out for machine parts. 7 months.\n\n"+
-				"As this revelation slowly started sinking in I remembered the state my father was.\n"+
-				"Scholars gave him only few weeks... I went to the clinic.\n"+
+				"经过几天的元素修补后，我发现了魔像。\n"+
+				"同时触摸所有这些物体会产生某种闪光。\n"+
+				"我看见一个老人向我跑来，他的叫喊使我失去了知觉。\n"+
+				"后来我在阁楼中间醒来，但其他的东西都不见了。\n\n"+
+				"几个小时后，我恢复了体力，可以再次活动了。\n"+
+				"走出房子给我带来了另一个惊喜。\n"+
+				"看来我在那里很久了。 看着最新鲜的报纸上的日期...\n"+
+				"7 个月前，我出去寻找机器零件。 7个月。\n\n"+
+				"随着这个启示慢慢开始深入，我想起了我父亲的状态。\n"+
+				"学者只给了他几个星期……我去了诊所。\n"+
 				"\n----------------------------------------------------------------------------------\n\n"+
-				"The sadness that I felt for the past months slowly turned into hatred towards that old man in vision.\n"+
-				"If it wasn't for him I would at least be with my father during his last breaths.\n"+
-				"I know what I want to do. I want to go back there.\n\n"+
-				"The fused Elemental Glove in my right arm wasn't something that old man wanted.\n"+
-				"Now I was able to hold two different Elements in it at the same time.\n"+
-				"But whenever I try to do something, white light appears around my chest\n"+
-				"and after few seconds causes a nullifying elemental wave. It is like a curse.\n\n"+
-				"I still should be able to do all the things I could before, I just need to\n"+
-				"improve my equipment. And so my preparations began.\n"+
+				"几个月来的悲伤，慢慢的变成了对那位目光中的老者的恨意。\n"+
+				"如果不是他，我至少会在父亲最后一口气时陪在他身边。\n"+
+				"我知道我想做什么。 我想回到那里。\n\n"+
+				"我右臂上的融合元素手套不是老人想要的东西。\n"+
+				"现在我能够同时在其中容纳两个不同的元素。\n"+
+				"但每当我尝试做某事时，我的胸口就会出现白光\n"+
+				"并在几秒钟后引起无效元素波。 这就像一个诅咒。\n\n"+
+				"我仍然应该能够做我以前能做的所有事情，我只需要\n"+
+				"改进我的设备。 于是我的准备工作开始了。\n"+
 				"\n----------------------------------------------------------------------------------\n\n"+
-				"A few months have passed.\n\n"+
-				"I gathered a lot more machine parts and remade the machines I used last time.\n"+
-				"During that time I made two big discoveries. First - compression crystals made with my Glove\n"+
-				"are a bit different. They seems to infinitely compress elements. Applying them\n"+
-				"to machines and Orbs was surprisingly easy. I remade 4 Orbs into room-sized Tanks\n"+
-				"and gathered a bunch more for Golem experiments. I think I'm ready to make a push for it.\n\n"+
-				"With new crystals I was able to reverse engineer how they link to other side.\n"+
-				"I should be able to make a small rifts and pull Elements directly from it.\n"+
+				"几个月过去了。\n\n"+
+				"我收集了更多的机器零件并重新制作了我上次使用的机器。\n"+
+				"在那段时间里，我有两个重大发现。 第一 - 用我的手套制作的压缩晶体\n"+
+				"有点不同。 它们似乎无限压缩元素。 应用它们\n"+
+				"到机器和 宝珠 非常容易。 我将 4 个宝珠改造成房间大小的坦克\n"+
+				"并为 魔像 实验收集了更多。 我想我已经准备好推动它了。\n\n"+
+				"使用新晶体，我能够逆向工程它们如何连接到另一侧。\n"+
+				"我应该能够制造一个小裂缝并直接从中拉出元素。\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"rifts0" : {
 			"text" :
-				"I don't think I will be able to reach high enough amounts of Elements with Rifts alone.\n"+
-				"The problem is... I don't know how the Catalyst in my grandma's attic was made.\n"+
-				"Well, I'll just remake its shape and we'll see how it goes from there.\n\n"+
-				"That's interesting. I don't really understand why it's increasing efficiency of reactions, but\n"+
-				"surrounding it with Air seems to increase speed of reactions as well.\n"+
-				"I think focusing Fire around the Catalyst lessens natural barriers and pulls more\n"+
-				"Elements from the same source as the rifts.\n\n"+
-				"Anyway, with the Catalyst ready I just need to install it in the middle of the room.\n"+
+				"我不认为我能够单独使用 裂痕 达到足够高的元素数量。\n"+
+				"问题是……我不知道我奶奶阁楼上的催化剂是怎么做的。\n"+
+				"好吧，我将重新塑造它的形状，然后我们将看看它是如何从那里开始的。\n\n"+
+				"那很有意思。 我真的不明白为什么它会提高反应效率，但是\n"+
+				"用空气包围它似乎也能提高反应速度。\n"+
+				"我认为将火集中在催化剂周围可以减少自然障碍并拉动更多\n"+
+				"与裂隙同源的元素。\n\n"+
+				"无论如何，准备好催化剂后，我只需要将其安装在房间中间。\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"catalyst0" : {
 			"text" :
-				"An Elemental wave caused by my curse focused on the Catalyst and soon after shattered it.\n"+
-				"I guess the strain of a wave focusing around it is just too strong.\n"+
-				"At least creating the Catalyst from scratch gave me a bit of additional knowledge\n"+
-				"about Elements. I'll modify the Catalyst to go on the outside of the conversion machines.\n"+
-				"Giving it a ring form will spread out wave forces on a larger surface. It should be enough.\n"+
+				"由我的诅咒引起的元素波集中在催化剂上，很快就将其粉碎。\n"+
+				"我猜围绕它的波浪的应变太强了。\n"+
+				"至少从头开始创建 催化剂 给了我一些额外的知识\n"+
+				"关于元素。 我将修改 催化剂 以用于转换机器的外部。\n"+
+				"给它一个环形将在更大的表面上传播波浪力。 应该够了。\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"catalyst1" : {
 			"text" :
-				"Yes, it works! Sadly it seems that the new Catalyst structure is much weaker.\n"+
-				"But in the long run I still should be able to get massive amounts of the Elements.\n\n"+
-				"Now it's time to focus on my goal, getting back some Golems.\n"+
-				"I don't want to randomly cause their creation anymore, so I devised special machine.\n"+
-				"The infusion chamber will let me control the processes with valves. With few dozen\n"+
-				"empty Orbs I'll even be able to try making multiple Golems of same type.\n"+
-				"I cannot wait to explore new possibilities.\n"+
+				"是的，它有效！ 可悲的是，新的催化剂结构似乎要弱得多。\n"+
+				"但从长远来看，我仍然应该能够获得大量的元素。\n\n"+
+				"现在是时候专注于我的目标了，找回一些魔像。\n"+
+				"我不想再随意造成他们的创作，所以我设计了特殊的机器。\n"+
+				"输液室可以让我用阀门控制流程。 用几十\n"+
+				"空宝珠我甚至可以尝试制作多个相同类型的魔像。\n"+
+				"我迫不及待地想探索新的可能性。\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"stash0" : {
 			"text" :
-				"Losing all my Elements each time I create a Golem is slowing my progress a lot.\n"+
-				"But seeing Elemental waves 'thanks' to my curse I was able to understand it a bit better.\n"+
-				"Waves propagate through the space using small bits of Elements that naturally appear\n"+
-				"in the world around me. And waves from my curse are a bit weaker than Golem ones,\n"+
-				"so they only get to tanks that I used during upgrading processes. This means a simple\n"+
-				"isolation barrier should be able to stop waves from getting inside my containers.\n\n"+
-				"Sadly using that barrier inside my tanks would render them unusable with\n"+
-				"my current subspace piping technology, I should still be able to make a special container\n"+
-				"that'd be safe from waves. Pumping Elements in and out of it will be problematic.\n"+
-				"Well, I have a plan. I'll only be able to retrieve a small portion of stored Elements\n"+
-				"after each wave created during process of upgrading or golem creation, but it's better\n"+
-				"than starting from scratch\n"+
+				"每次创建魔像时都会丢失所有元素，这会大大减慢我的进度。\n"+
+				"但是看到元素波“感谢”我的诅咒，我能够更好地理解它。\n"+
+				"波使用自然出现的少量元素在空间中传播\n"+
+				"在我周围的世界。 我的诅咒波比魔像弱一点，\n"+
+				"所以他们只能进入我在升级过程中使用的坦克。 这意味着一个简单的\n"+
+				"隔离屏障应该能够阻止波浪进入我的容器。\n\n"+
+				"可悲的是，在我的罐内使用该屏障会使它们无法使用\n"+
+				"我现在的子空间管道技术，我应该还能做出一个特殊的容器\n"+
+				"那将是安全的海浪。 将元素泵入和抽出它会出现问题。\n"+
+				"嗯，我有一个计划。 我将只能检索一小部分存储的元素\n"+
+				"在升级或魔像创建过程中创建的每一波之后，但它更好\n"+
+				"比从头开始\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"merge0" : {
 			"text" :
-				"Elemental waves created by a Golem pulled another one to it and darkness surrounded them.\n"+
+				"魔像产生的元素波将另一波拉向它，黑暗包围了他们。\n"+
 				"I think the process started due to vast amounts of Elements present in the room.\n\n"+
 				"After a while of intense spinning the two Golems merged into one.\n"+
 				"That's... insane. There are only 4 Elements. What's inside new one? I cannot interact\n"+
