@@ -412,7 +412,7 @@ var locale = {
 		propeneDrain1: "垃圾桶",
 		propeneDrain2: "工业垃圾桶",
 
-		spatialCreation1: "压缩空间",
+		spatialCreation1: "压缩空间性",
 		spatialProduce1: "单Tick",
 
 		temporalCreation1: "双重压缩空间",
@@ -597,11 +597,11 @@ var locale = {
 		Diesel: "柴油机",
 		Petrol: "汽油",
 		Propene: "丙烯",
-		Spatial: "空间",
+		Spatial: "空间性",
 		Temporal: "颞",
 		Parallel: "平行",
 		FoldedSpace: "折叠空间",
-		FoldedSpatial: "折叠空间2",
+		FoldedSpatial: "折叠空间性2",
 		FoldedTemporal: "折叠时间",
 		Time: "时间",
 		NormalLimit: "正常限度",
