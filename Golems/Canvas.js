@@ -1532,10 +1532,10 @@ function drawFAQ(ctx) {
 	ctx.textAlign = "center";
 	ctx.fillText("常见问题",400,160);
 	ctx.textAlign = "left";
-	ctx.fillText("Q1 : Why can't I see the capacity of the machines?",160,200);
-	ctx.fillText("A1 : With new crystals machines have near infinite capacity. (1e300)",160,220);
-	ctx.fillText("Q2 : When the gauge on machine looks full, why does Element still flow into it?",160,260);
-	ctx.fillText("A2 : With new capacity gauges behave differently. They show",160,280);
+	ctx.fillText("Q1 : 为什么我看不到机器的容量？",160,200);
+	ctx.fillText("A1 : 新的水晶机器具有近乎无限的容量。 (1e300)",160,220);
+	ctx.fillText("Q2 : 当机器上的仪表看起来已满时，为什么元素仍然流入其中？",160,260);
+	ctx.fillText("A2 : 使用新的容量表时，行为会有所不同。 他们展示",160,280);
 	ctx.fillText(     "ratio of Elements inside machine. This helps you visualise",190,300);
 	ctx.fillText(     "which part of a conversion recipe would need improvement.",190,320);
 	ctx.fillText("Q3 : I have both valves open on a machine, but I don't produce anything. Help?",160,360);

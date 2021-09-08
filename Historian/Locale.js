@@ -466,15 +466,15 @@ var locale = {
 
 		acidProduction1: "舒适的方式",
 
-		ashCompress1: "Inefficient Ash Compression",
-		ashCompress2: "Efficient Ash Compression",
-		dustCompress1: "Inefficient Dust Compression",
-		dustCompress2: "Efficient Dust Compression",
+		ashCompress1: "低效灰烬压缩",
+		ashCompress2: "高效灰烬压缩",
+		dustCompress1: "低效粉尘压缩",
+		dustCompress2: "高效粉尘压缩",
 
-		gravelProduction1: "Dechunking Earth",
-		pebbleProduction1: "Cobble Trouble",
-		pebbleProduction2: "Decrushing Gravel",
-		stoneProduction1: "Decrumbling Pebbles",
+		gravelProduction1: "拆解地",
+		pebbleProduction1: "鹅卵石故障",
+		pebbleProduction2: "冲蚀砾石",
+		stoneProduction1: "粉碎Pebbles",
 
 		gemGrow1: "G",
 		gemGrow2: "E",
