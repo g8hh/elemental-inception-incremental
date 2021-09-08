@@ -40,11 +40,7 @@ function cnItem(text) {
     for (var i in cnItems) {
         if (text == i) {
             return cnItems[i];
-        }
-    }
-    //数组里面没有的，原样返回
-    for (var i in cnItems) {
-        if (text != i) {
+        } else {
             console.log("需汉化的英文Item：" + text);
             return text;
         }
