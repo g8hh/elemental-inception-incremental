@@ -988,7 +988,7 @@ function preprocessPaneData()
 	iconLegendPane.modelRegion.markedToSuperGlow = true;
 
 	lorePane = new cPane(mainPane, -300, -300);
-	lorePane.title = "Lore Viewer";
+	lorePane.title = "知识查看器";
 	regionData.pinRegion.action(lorePane);
 
 	lorePane.region = tabRegions[3];
@@ -1019,7 +1019,7 @@ function preprocessPaneData()
 	var path = new Path2D();
 	path.rect(0, 0, 400, 300);
 	optionsPane.boundaryPath = path;
-	optionsPane.title = "Options - Don't forget to apply your settings!";
+	optionsPane.title = "选项 - 别忘了保存你的设置。";
 	optionsPane.customDraw = function (ctx)
 	{
 		if (!this.postShow)
@@ -1102,7 +1102,7 @@ function preprocessPaneData()
 	var path = new Path2D();
 	path.rect(0, 0, 300, 200);
 	donatePage.boundaryPath = path;
-	donatePage.title = "Donation Page";
+	donatePage.title = "捐赠页面";
 	donatePage.customDraw = function (ctx)
 	{
 		ctx.drawImage(images.donationPage, 0, 30);
@@ -1135,7 +1135,7 @@ function preprocessMapControl()
 	var path = new Path2D();
 	path.rect(0, 0, 120, 20);
 	hideAllRegion.boundaryPath = path;
-	hideAllRegion.text = "Temp. Hide Panes";
+	hideAllRegion.text = "临时隐藏窗格";
 	hideAllRegion.textX = 60;
 	hideAllRegion.textY = 10;
 	hideAllRegion.hiddenList = [];
@@ -1166,7 +1166,7 @@ function preprocessMapControl()
 
 	var closeAllRegion = new cRegion(20, 60);
 	closeAllRegion.boundaryPath = path;
-	closeAllRegion.text = "Close All Panes";
+	closeAllRegion.text = "关闭所有框格";
 	closeAllRegion.textX = 60;
 	closeAllRegion.textY = 10;
 	closeAllRegion.mouseHandler = function (pane, x, y, type)
@@ -1184,7 +1184,7 @@ function preprocessMapControl()
 
 	var unpinAllRegion = new cRegion(150, 30);
 	unpinAllRegion.boundaryPath = path;
-	unpinAllRegion.text = "Unpin All Panes";
+	unpinAllRegion.text = "取消固定所有框格";
 	unpinAllRegion.textX = 60;
 	unpinAllRegion.textY = 10;
 	unpinAllRegion.mouseHandler = function (pane, x, y, type)
@@ -1199,7 +1199,7 @@ function preprocessMapControl()
 
 	var resetAllRegion = new cRegion(150, 60);
 	resetAllRegion.boundaryPath = path;
-	resetAllRegion.text = "Reset Pane Pos.";
+	resetAllRegion.text = "重置面板位置";
 	resetAllRegion.textX = 60;
 	resetAllRegion.textY = 10;
 	resetAllRegion.mouseHandler = function (pane, x, y, type)
@@ -1221,7 +1221,7 @@ function preprocessOptions()
 	var path = new Path2D();
 	path.rect(0, 0, 100, 20);
 	applyRegion.boundaryPath = path;
-	applyRegion.text = "Apply Settings";
+	applyRegion.text = "保存设置";
 	applyRegion.textX = 50;
 	applyRegion.textY = 10;
 
@@ -1246,7 +1246,7 @@ function preprocessOptions()
 
 	var revertRegion = new cRegion(205, 270);
 	revertRegion.boundaryPath = path;
-	revertRegion.text = "Revert changes";
+	revertRegion.text = "重置更改";
 	revertRegion.textX = 50;
 	revertRegion.textY = 10;
 	revertRegion.mouseHandler = function (pane, x, y, type)
@@ -1254,14 +1254,14 @@ function preprocessOptions()
 		if (type == "mouseup")
 		{
 			optionsPane.optionData = JSON.parse(JSON.stringify(optionData));
-			pane.iconSizeRegion.text = "Toggle UI size. " + optionData.iconSize + "px -> " + optionsPane.optionData.iconSize + "px";
-			pane.particleCDRegion.text = "Toggle particle limiter. x" + optionData.particleCDMultiplier + " -> x" + optionsPane.optionData.particleCDMultiplier;
+			pane.iconSizeRegion.text = "切换界面大小 " + optionData.iconSize + "px -> " + optionsPane.optionData.iconSize + "px";
+			pane.particleCDRegion.text = "切换粒子限制器 x" + optionData.particleCDMultiplier + " -> x" + optionsPane.optionData.particleCDMultiplier;
 		}
 	};
 	optionsPane.subRegions.push(revertRegion);
 
 	var iconSizeRegion = new cRegion(25, 75);
-	iconSizeRegion.text = "Toggle icon size. " + optionData.iconSize + "px -> " + optionsPane.optionData.iconSize + "px";
+	iconSizeRegion.text = "切换图标大小. " + optionData.iconSize + "px -> " + optionsPane.optionData.iconSize + "px";
 	iconSizeRegion.textX = 100;
 	iconSizeRegion.textY = 10;
 	var path = new Path2D();
@@ -1272,7 +1272,7 @@ function preprocessOptions()
 		if (type == "mouseup")
 		{
 			pane.optionData.iconSize = 40 - pane.optionData.iconSize;
-			this.text = "Toggle UI size. " + optionData.iconSize + "px -> " + optionsPane.optionData.iconSize + "px";
+			this.text = "切换界面大小 " + optionData.iconSize + "px -> " + optionsPane.optionData.iconSize + "px";
 		}
 	};
 	optionsPane.iconSizeRegion = iconSizeRegion;
@@ -1304,7 +1304,7 @@ function preprocessDonations()
 	var path = new Path2D();
 	path.rect(0, 0, 120, 20);
 	patreonRegion.boundaryPath = path;
-	patreonRegion.text = "Link to Patreon";
+	patreonRegion.text = "前往Patreon";
 	patreonRegion.textX = 60;
 	patreonRegion.textY = 10;
 	patreonRegion.mouseHandler = function (pane, x, y, type)
@@ -1320,7 +1320,7 @@ function preprocessDonations()
 	var path = new Path2D();
 	path.rect(0, 0, 120, 20);
 	paypalRegion.boundaryPath = path;
-	paypalRegion.text = "Link to Paypal";
+	paypalRegion.text = "前往Paypal";
 	paypalRegion.textX = 60;
 	paypalRegion.textY = 10;
 	paypalRegion.mouseHandler = function (pane, x, y, type)

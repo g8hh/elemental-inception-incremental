@@ -1289,7 +1289,7 @@ function preprocessMachines()
 	machines.recipeSelectorRegion = new cRegion(optionData.iconSize * (displayStep + 1) + 4 + additionalPauseTranslation, optionData.iconSize + 1);
 	machines.recipeSelectorRegion.boundaryPath = new Path2D();
 	machines.recipeSelectorRegion.boundaryPath.rect(0, 0, optionData.iconSize + 53, optionData.iconSize);
-	machines.recipeSelectorRegion.text = "Recipes";
+	machines.recipeSelectorRegion.text = "配方";
 	machines.recipeSelectorRegion.textX = optionData.iconSize + 25;
 	machines.recipeSelectorRegion.textY = optionData.iconSize / 2;
 	machines.recipeSelectorRegion.customDraw = function (ctx, pane)
