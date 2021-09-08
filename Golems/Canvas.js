@@ -1139,9 +1139,9 @@ function drawTankNumbers(ctx) {
 	ctx.font = "18px 'Open Sans'";
 	ctx.textAlign = "left";
 	
-	ctx.fillText("土地",130,-260);
+	ctx.fillText("地",130,-260);
 	ctx.fillText("水",130,260);
-	ctx.fillText("空气",-270,260);
+	ctx.fillText("气",-270,260);
 	ctx.fillText("火",-270,-260);
 	
 	drawNumber(ctx,185,-258,dynamicData.elementalTanks["Earth"].amount);

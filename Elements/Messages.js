@@ -634,7 +634,7 @@ var jsonMessages = {
 	},
 	"base0" : {
 		"flush" : true,
-		"loreText" : "土宝珠的底部已被填满。 现在我可以真正开始用地球填充它了。",
+		"loreText" : "地宝珠的底部已被填满。 现在我可以真正开始用地球填充它了。",
 		"loreFreezeDuration": 1000,
 		"gameplayText" : "第一次升级也出现在页面底部。",
 		"gameplayFreezeDuration": 1000,
@@ -671,7 +671,7 @@ var jsonMessages = {
 	},
 	"elementGathered0" : {
 		"flush" : true,
-		"loreText" : "随着土供应的增加，我应该开始考虑激活另一个 宝珠。 <br><br>在宝珠附近生锈的床单下，我发现了一个液化器。 它有轻微损坏，但应该可以工作。",
+		"loreText" : "随着地供应的增加，我应该开始考虑激活另一个 宝珠。 <br><br>在宝珠附近生锈的床单下，我发现了一个液化器。 它有轻微损坏，但应该可以工作。",
 		"loreFreezeDuration": 5000,
 		"gameplayText" : "在扩展坞上安装机器。",
 		"gameplayFreezeDuration": -1,
@@ -688,7 +688,7 @@ var jsonMessages = {
 	},
 	"elementGathered0.2" : {
 		"flush" : true,
-		"loreText" : "机器准备好了。<br>我应该打开输入阀，希望土开始流入它。",
+		"loreText" : "机器准备好了。<br>我应该打开输入阀，希望 地 开始流入它。",
 		"loreFreezeDuration": 4000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": -1,
@@ -735,7 +735,7 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"upgradeBought0" : {
-		"loreText" : "<br>现在我不需要手动填充土。 终于解脱了。",
+		"loreText" : "<br>现在我不需要手动填充 地。 终于解脱了。",
 		"loreFreezeDuration": 5000,
 		"gameplayText" : " | 随着游戏的进行，自动点击器会变得更好",
 		"gameplayFreezeDuration": 5000,
@@ -832,7 +832,7 @@ var jsonMessages = {
 		"firstActiveElement" : "none"
 	},
 	"machineActivated0" : {
-		"loreText" : "<br>是的！ 有用！ 现在我可以以 100% 的效率积水。 4 土和 1 水 => 4 水意味着总体而言我仍然会损失一些。<br>但是随着水供应的增加，我可以开始考虑升级液化器并为我的下一个 宝珠 努力",
+		"loreText" : "<br>是的！ 有用！ 现在我可以以 100% 的效率积水。 4 地 和 1 水 => 4 水意味着总体而言我仍然会损失一些。<br>但是随着水供应的增加，我可以开始考虑升级液化器并为我的下一个 宝珠 努力",
 		"loreFreezeDuration": 10000,
 		"gameplayText" : "",
 		"gameplayFreezeDuration": 1,

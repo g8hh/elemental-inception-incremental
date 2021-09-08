@@ -5,7 +5,7 @@ var cnItems = {
     'Options': '选项',
     'Lore': '传说',
     'Open Water Rift': '开放水域裂缝',
-    'Earth': '土地',
+    'Earth': '地',
     'Water': '水',
     'Rift Power I': '裂谷动力 I',
     'Rift Power II': '裂谷动力 II',
