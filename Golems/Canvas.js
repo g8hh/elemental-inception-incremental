@@ -1536,21 +1536,21 @@ function drawFAQ(ctx) {
 	ctx.fillText("A1 : 新的水晶机器具有近乎无限的容量。 (1e300)",160,220);
 	ctx.fillText("Q2 : 当机器上的仪表看起来已满时，为什么元素仍然流入其中？",160,260);
 	ctx.fillText("A2 : 使用新的容量表时，行为会有所不同。 他们展示",160,280);
-	ctx.fillText(     "ratio of Elements inside machine. This helps you visualise",190,300);
-	ctx.fillText(     "which part of a conversion recipe would need improvement.",190,320);
-	ctx.fillText("Q3 : I have both valves open on a machine, but I don't produce anything. Help?",160,360);
-	ctx.fillText("A3 : 1. Secondary values on tanks shows absolute change of amount per second.",160,380);
-	ctx.fillText(     "2. Before you get specific upgrades there are no limits in amounts of",190,400);
-	ctx.fillText(     "Element that can flow into a machine, which sometimes can lead to",190,420);
-	ctx.fillText(     "a situation where everything you produce just flows into machines.",190,440);
-	ctx.fillText(     "Try disabling valves with a dominant Element and enable valves with lesser ones.",190,460);
-	ctx.fillText(     "This will empty out the machine over time.",190,480);
-	ctx.fillText("Q4 : How does Stash work exactly?",160,520);
-	ctx.fillText("A4 : Whenever you make a golem or buy an upgrade stash activates,",160,540);
-	ctx.fillText(     "letting out the nth root of stored Elements. At first it's 4th root,",190,560);
-	ctx.fillText(     "but with futher upgrades it can get up to square root.",190,580);
-	ctx.fillText("Q5 : Is Mayonnaisse an Element?",160,620);
-	ctx.fillText("A5 : No. I don't know what are you talking about.",160,640);
+	ctx.fillText(     "机器内部元素的比例。 这有助于你形象化",190,300);
+	ctx.fillText(     "转换配方的哪一部分需要改进。",190,320);
+	ctx.fillText("Q3 : 我在一台机器上打开了两个阀门，但我不生产任何东西。 有啥帮助？",160,360);
+	ctx.fillText("A3 : 1. 罐子上的次要值显示每秒数量的绝对变化。",160,380);
+	ctx.fillText(     "2. 在您获得特定升级之前，数量没有限制",190,400);
+	ctx.fillText(     "可以流入机器的元素，这有时会导致",190,420);
+	ctx.fillText(     "你生产的一切都流入机器的情况。",190,440);
+	ctx.fillText(     "尝试禁用具有主要元素的阀门并启用具有较小元素的阀门。",190,460);
+	ctx.fillText(     "随着时间的推移，这将清空机器。",190,480);
+	ctx.fillText("Q4 : 藏品究竟是如何工作的？",160,520);
+	ctx.fillText("A4 : 每当你制作魔像或购买升级藏品时，",160,540);
+	ctx.fillText(     "放出存储元素的第 n 个根。 起初它是第 4 个根，",190,560);
+	ctx.fillText(     "但随着进一步升级，它可以达到平方根。",190,580);
+	ctx.fillText("Q5 : 蛋黄酱是一种元素吗？",160,620);
+	ctx.fillText("A5 : 不，我不知道你在说什么。",160,640);
 }
 
 function drawDonate(ctx) {

@@ -74,7 +74,7 @@ var cnItems = {
     "Open a rift to an elemental plane inside Water's tank.": "打开通往水之罐内元素位面的裂缝。",
     "Rift will produce 2x more Element.": "裂痕将产生 2 倍以上的元素。",
     "Open a rift to an elemental plane inside Air's tank.": "在 气之罐 中打开一个通往元素位面的裂缝。",
-    "": "",
+    "Open a rift to an elemental plane inside Fire's tank.": "在 火之罐 中打开一个通往元素位面的裂缝。",
     "": "",
     "": "",
     "": "",
