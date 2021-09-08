@@ -84,107 +84,107 @@ var lore = {
 		"merge0" : {
 			"text" :
 				"魔像产生的元素波将另一波拉向它，黑暗包围了他们。\n"+
-				"I think the process started due to vast amounts of Elements present in the room.\n\n"+
-				"After a while of intense spinning the two Golems merged into one.\n"+
-				"That's... insane. There are only 4 Elements. What's inside new one? I cannot interact\n"+
-				"with it using my gloved arm. For now I just have to make sure this accident doesn't\n"+
-				"happen again. From now on I'll put all golems on stable pedestals.\n\n\n"+
-				"Experimenting with new golems is the most interesting thing I've ever done.\n"+
-				"While I used normal Golems to help with gathering their respective Elements I cannot\n"+
-				"do the same with this one. But it emanates a faint aura that spread across the room and\n"+
-				"it seems that it enhanced my machines in some weird way. I'll try to document details of\n"+
-				"that power later. Now the question is... if that combination of base Golems created this,\n"+
-				"then what happens when I try another combination?\n\n"+
-				"Thanks to all my experiences with creating Golems I was able to construct tiny versions\n"+
-				"of Orbs. I only need a bit of Element to turn them into Golems, but they dissipate after\n"+
-				"a few minutes. Thanks to their size I was able to contain their waves inside for isolated study.\n"+
-				"With them I've done more tests and indeed all combinations of base Golems create different\n"+
-				"'advanced' Golems. I've also tested their powers and they are so much different then\n"+
-				"anything I've seen before. My next goal should be making as many of them as possible.\n"+
+				"我认为这个过程是由于房间里存在大量元素而开始的。\n\n"+
+				"经过一段时间的剧烈旋转，两个魔像合二为一。\n"+
+				"那是……疯了。 只有 4 个元素。 新的里面有什么？ 我无法互动\n"+
+				"用我戴着手套的手臂。 现在我只需要确保这次事故不会发生\n"+
+				"再次发生。 从现在开始，我会把所有的魔像放在稳定的基座上。\n\n\n"+
+				"尝试新的魔像是我做过的最有趣的事情。\n"+
+				"虽然我使用普通的魔像来帮助收集它们各自的元素，但我不能\n"+
+				"对这个做同样的事情。 但它散发出一种微弱的光环，在整个房间里蔓延开来，\n"+
+				"它似乎以某种奇怪的方式增强了我的机器。 我会尝试记录下的细节\n"+
+				"那个权力以后。 现在的问题是……如果基础魔像的组合创造了这个，\n"+
+				"那么当我尝试另一种组合时会发生什么？\n\n"+
+				"多亏了我在创建 魔像 方面的所有经验，我才能够构建小版本\n"+
+				"宝珠。 我只需要一点元素就可以把它们变成魔像，但它们会在之后消散\n"+
+				"几分钟。 由于它们的大小，我能够将它们的波浪包含在内部进行单独研究。\n"+
+				"有了他们，我做了更多的测试，实际上所有基础魔像的组合都创造了不同的\n"+
+				"“高级”魔像。 我也测试了他们的能力，他们当时大不相同\n"+
+				"我以前见过的任何东西。 我的下一个目标应该是尽可能多地制作它们。\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"eat0" : {
 			"text" :
-				"It seems that two Golems of the same type can't coexists together inside a small space.\n"+
-				"Elemental waves caused them to connect, and soon after one drained the other,\n"+
-				"only to leave the newly created Golem in an unstable state that caused small explosion of \n"+
-				"white light. Did that damned old man interfere again?\n"+
+				"两个同类型的魔像似乎无法在狭小的空间内共存。\n"+
+				"元素波使它们连接起来，不久之后，一个吸干了另一个，\n"+
+				"只是让新创建的魔像处于不稳定状态，导致小爆炸\n"+
+				"白光。 那个该死的老头又插手了？\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"infernal0" : {
 			"text" :
-				"The Golem, which I have decided to name 'Infernal' feels special.\n"+
-				"Not only it seems that it is the most powerful of combined Golems, it also has this strange\n"+
-				"trend. My calculations noted that its power to generate all Elements will go down to\n"+
-				"nothing at some point. I suspect that after point it'll actually start to drain\n"+
-				"Elements from my system. I don't really know what it's going to do after that, but\n"+
-				"it's clear I'll need to get there."
+				"我决定将其命名为“地狱火”的魔像感觉很特别。\n"+
+				"不仅看起来它是组合魔像中最强大的，它还有这个奇怪的\n"+
+				"趋势。 我的计算表明它产生所有元素的能力将下降到\n"+
+				"在某些时候什么都没有。 我怀疑在点之后它实际上会开始流失\n"+
+				"来自我系统的元素。 我真的不知道在那之后会做什么，但是\n"+
+				"很明显我需要到达那里。"
 		},
 		"infernal1" : {
 			"text" :
-				"My suspicion was right. As soon as I crossed 1e90 threshold the Infernal Golem reversed\n"+
-				"its power and started draining Elements, the more I have the stronger the drain.\n"+
-				"Its also growing in size according to its drain rate.\n\n"+
-				"I think giving it enough of all Elements should satisfy it at some point.\n"+
-				"I just hope my reactions are strong enough to sustain it.\n"+
+				"我的怀疑是对的。 我一跨过 1e90 门槛，地狱火魔像就反转了\n"+
+				"它的力量并开始吸取元素，我拥有的吸取越多。\n"+
+				"它的大小也随着其流失率而增长。\n\n"+
+				"我认为给它足够的所有元素应该会在某个时候满足它。\n"+
+				"我只希望我的反应足够强烈以维持它。\n"+
 				"\n----------------------------------------------------------------------------------"
 		},
 		"ending0" : {
 			"text" :
-				"Once the Infernal reached it maximal size it rose into the air from pedestal and\n"+
-				"started repeatedly sending huge Elemental Waves.\n\n"+
-				"The first wave cleared all my machines from Elements, even my Stash.\n"+
-				"The Second wave destabilized all other Golems\n\n"+
-				"Immense pain flooded my Gloved right arm. I froze in place unable to fight it.\n\n"+
-				"A Third wave sent all my machines into the wall, making an improvised spiked barrier around the room.\n"+
-				"A Fourth wave made other Golems explode into secondary Elemental Waves.\n\n"+
-				"Two things happened almost at the same time:\n"+
+				"一旦 地狱 达到最大尺寸，它就会从基座升到空中并\n"+
+				"开始反复发送巨大的元素波。\n\n"+
+				"第一波从 元素 中清除了我所有的机器，甚至是我的 存储。\n"+
+				"第二波破坏了所有其他魔像\n\n"+
+				"巨大的疼痛淹没了我的手套右臂。 我僵在原地无法抗争。\n\n"+
+				"第三波将我所有的机器都打到墙上，在房间周围形成了一个临时的尖刺屏障。\n"+
+				"第四波使其他魔像爆炸成次要元素波。\n\n"+
+				"两件事几乎同时发生：\n"+
 				"----------------------------------------------------------------------------------\n"+
-				"Bright white light appeared on one of the walls.\n"+
-				"Secondary waves from Golems reached Infernal and began changing him.\n"+
+				"其中一面墙上出现了明亮的白光。\n"+
+				"来自魔像的二次波到达了地狱火并开始改变他。\n"+
 				"----------------------------------------------------------------------------------\n"+
-				"The silhouette of the old man stepped through the light wall.\n"+
-				"The eyes of the Infernal Golem gained focus and he looked around the room.\n"+
+				"老者的身影踏进了光墙之中。\n"+
+				"炼狱魔像的目光集中了起来，环顾了房间。\n"+
 				"----------------------------------------------------------------------------------\n"+
-				"Old man noticed me and turned towards me. \"You...\"\n"+
-				"The Infernal Golem stopped emitting waves and shrank a little.\n"+
+				"老头子注意到了我，转头看向我。 \"你...\"\n"+
+				"地狱火魔像停止了波动，身体微微缩了缩。\n"+
 				"----------------------------------------------------------------------------------\n"+
-				"A single finger was pointed towards me. \"I can't let you do this.\"\n"+
-				"The Infernal suddenly launched towards me.\n"+
+				"一根手指指向了我。 “我不能让你这样做。”\n"+
+				"地狱火突然向我袭来。\n"+
 				"----------------------------------------------------------------------------------\n"+
-				"\"I'm sorry.\" - an instant beam of light pointing at my chest, at first weak, but warm.\n"+
-				"My golem hit me from my left side and pushed me into the spiked wall to my right.\n"+
+				"\“对不起。\” - 瞬间光束指向我的胸口，起初微弱，但温暖。\n"+
+				"我的魔像从我的左侧击中了我，并将我推入了我右侧的尖刺墙。\n"+
 				"----------------------------------------------------------------------------------\n"+
-				"I think the Golem took the hit from the light. I blinked.\n"+
-				"The Infernal vanished. The Light was also gone. The Old man looked exactly like the Alchemist in books.\n"+
-				"I hit the wall and felt spikes piercing my body. A new pain.\n"+
-				"Old man said:\"I guess those spikes did it in my stead\"\n"+
-				"I saw the old man turning around and walking into the wall.\n"+
-				"\"At least I don't feel pain in my gloved arm anymore..\" was my last thought before\n"+
-				"losing consciousness.\n"+
+				"我认为石巨人从光中受到了打击。 我眨了眨眼。\n"+
+				"地狱火消失了。 光也不见了。 老者与书中的炼金术士长得一模一样。\n"+
+				"我撞到墙上，感觉到尖刺刺穿了我的身体。 一种新的痛苦。\n"+
+				"老人说：“我猜是那些钉子代替了我”\n"+
+				"只见老者转身朝墙内走去。\n"+
+				"“至少我戴手套的手臂不再感到疼痛了..”是我之前的最后一个想法\n"+
+				"失去意识。\n"+
 				"\n----------------------------------------------------------------------------------\n\n"+
-				"Few hours later:\n"+
-				"I woke up on the floor. I got up. No pain, no issues with moving.\n"+
-				"I didn't feel this good in weeks of sleepless nights I've spent on preparations.\n"+
-				"Confused I looked around. Spikes on walls. So it did happen. The spikes nearest me\n"+
-				"are still covered in blood, yet I don't have any wounds. My body looked just as\n"+
-				"always until I noticed the glass globe in my left arm, marking a spot I was\n"+
-				"hit by the Infernal. That's... at this point I wasn't even surprised.\n"+
-				"I started thinking what could that mean and how could I use it...\n\n"+
-				"While thinking, I noticed another small glass globe on the floor near me.\n"+
-				"I guess those are remains of the Infernal Golem. I reached out to pick it up, but\n"+
-				"it got absorbed into my hand and small purple orb appeared inside my own globe.\n\n\n"+
+				"几个小时后：\n"+
+				"我在地板上醒来。 我起来了。 没有疼痛，移动没有问题。\n"+
+				"在我为准备工作而度过的几个不眠之夜中，我感觉并不好。\n"+
+				"困惑的我环顾四周。 墙上的钉子。 所以它确实发生了。 离我最近的尖峰\n"+
+				"还满身是血，但我没有任何伤口。 我的身体看起来就像\n"+
+				"一直到我注意到左臂上的玻璃球，标记了我所在的位置\n"+
+				"被地狱火击中。 那是……在这一点上，我什至不感到惊讶。\n"+
+				"我开始思考这意味着什么以及我如何使用它......\n\n"+
+				"一边想着，一边注意到附近地板上的另一个小玻璃球。\n"+
+				"我猜那些是地狱魔像的遗迹。 我伸手去捡，但是\n"+
+				"它被我的手吸收，紫色的小球出现在我自己的球体中。\n\n\n"+
 				"\n----------------------------------------------------------------------------------"+
 				"\n----------------------------------------------------------------------------------"+
 				"\n----------------------------------------------------------------------------------"+
 				"\n----------------------------------------------------------------------------------\n\n"+
-				"This marks the end of stage two. Thank you for playing!\n"+
-				"You can now check out a sneak peek of the main mechanic of stage three.\n"+
-				"Click the circle in the middle of the main setup.\n\n\n\n"+
-				"If you liked the game please consider supporting me.\n"+
-				"I'd love to work full time on this game.\n"+
+				"这标志着第二阶段的结束。 谢谢你来玩！\n"+
+				"您现在可以查看第三阶段主要机制的先睹为快。\n"+
+				"单击主设置中间的圆圈。\n\n\n\n"+
+				"如果你喜欢这个游戏，请考虑支持我。\n"+
+				"我很想在这个游戏上全职工作。\n"+
 				"\n----------------------------------------------------------------------------------\n\n\n"+
-				"Credits\n\n\n"+
+				"鸣谢\n\n\n"+
 				"Production director\n"+
 				"Nagshell\n\n"+
 				"Art Design\n"+
@@ -207,70 +207,70 @@ var lore = {
 	"popupMessages" : {
 		"catalyst0" : {
 			"text" : 
-				"Elemental waves caused by my curse focused on Catalyst.\n"+
-				"And soon after shattered it into pieces.",
+				"由我的诅咒引起的元素波集中在催化剂上。\n"+
+				"然后很快就将它粉碎成碎片。",
 			//"changeTab" : 0
 		},
 		"merge0" : {
 			"text" :
-				"Another Orb imploded into a Golem and waves reached another Golem.\n\n"+
-				"Darkness filled the Orb infuser.\n\n"+
-				"I rushed to the center of the room to see what's happening."
+				"另一个 宝珠 内爆成一个 魔像，波浪到达了另一个 魔像。\n\n"+
+				"黑暗充满了 宝珠 注入器。\n\n"+
+				"我冲到房间中央看看发生了什么事。"
 		},
 		"eat0" : {
 			"text" :
-				"Elemental waves created by a new Golem reached another Golem of same type.\n"+
-				"Something is not right..."
+				"一个新的魔像产生的元素波到达了另一个同类型的魔像。\n"+
+				"有什么不对的..."
 		},
 		
 	},
 	"bannerMessages" : {
 		"overflow0" : {
-			"text" : "Open all conversion machine valves to create loop."
+			"text" : "打开所有转换机阀门以创建回路。"
 		},
 		"upgradeCost0" : {
-			"text" : "Curse clears Elements used in upgrades, including respective tanks and machines."
+			"text" : "诅咒清除升级中使用的元素，包括相应的罐子和机器。"
 		},
 		"machineSpeed0" : {
-			"text" : "Rotation speed multiplies speed of conversion. Very effective with highly upgraded Catalyst."
+			"text" : "旋转速度乘以转换速度。 使用高度升级的催化剂非常有效。"
 		},
 		"pun0" : {
-			"text" : "You slowly start seeing scrolling text. Spooky."
+			"text" : "您慢慢开始看到滚动文本。 幽灵般的。"
 		},
 		"pun1" : {
-			"text" : "Suddenly, nothing of particular interest happened."
+			"text" : "突然之间，没有什么特别感兴趣的事情发生。"
 		},
 		"pun2" : {
-			"text" : "Hm, you wanna hear a joke about paper? It's tearable."
+			"text" : "嗯，你想听一个关于纸的笑话吗？ 它是可撕裂的。"
 		},
 		"pun3" : {
-			"text" : "If you're enjoying the game consider supporting me \\('_' )."
+			"text" : "如果您喜欢游戏，请考虑支持我 \\('_' )."
 		},
 		"pun4" : {
-			"text" : "Suddenly, nothing of particular interest happened."
+			"text" : "突然之间，没有什么特别感兴趣的事情发生。"
 		},
 		"pun5" : {
-			"text" : "No, mayonnaise won't ever become one of Elements. Do NOT write songs about it."
+			"text" : "不，蛋黄酱永远不会成为 元素 之一。 不要写关于它的歌曲。"
 		},
 		"pun6" : {
 			"text" : 
-				"Did you notice puns are getting incrementally more funny each time you hear them?"+
+				"您是否注意到每次听到双关语都变得越来越有趣?"+
 				"                                                                                           "+
-				"Did you notice puns are getting incrementally more funny each time you hear them?"+
+				"您是否注意到每次听到双关语都变得越来越有趣?"+
 				"                                                                                           "+
-				"Did you notice puns are getting incrementally more funny each time you hear them?"
+				"您是否注意到每次听到双关语都变得越来越有趣？"
 		},
 		"pun7" : {
-			"text" : "PundexOutOfBounds - commence charging my PunReInator."
+			"text" : "庞德克斯禁止入内 - 开始为我的 双关语 充电。"
 		},
 		"pun8" : {
-			"text" : "No."
+			"text" : "不."
 		},
 		"pun9" : {
-			"text" : "You cannot catch Golems by throwing Orbs at them. I've tried.."
+			"text" : "您无法通过向 魔像 投掷 宝珠 来捕捉 魔像。 我试过了.."
 		},
 		"pun10" : {
-			"text" : "The First Alkahistorian has a discord!"
+			"text" : "第一个阿尔卡历史学家有 Discord！"
 		}
 	},
 	
