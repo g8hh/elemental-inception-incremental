@@ -523,7 +523,7 @@ function tick()
 
 	if (winCheck && data.oElements.PureGolemEarth.amount + data.oElements.PureGolemWater.amount + data.oElements.PureGolemAir.amount + data.oElements.PureGolemFire.amount > 3)
 	{
-		alert("You win. I hope you liked the stage 3 of The First Alkahistorian!\n\nBig thanks to my supporters and helpers:\nPhantomLemon\nVoid\nAeras Alum\nnaltronix\nranger10700\nNevahlif06\n\nAdditional art provided by:\nnononick\nDimava\nRubikium\n\nMy entire family\nEssi & Baster\n\n\\\\('_' )\nMade by Nagshell");
+		alert("你赢了。 我希望你喜欢 第三阶段！\n\n非常感谢我的支持者和帮助者:\nPhantomLemon\nVoid\nAeras Alum\nnaltronix\nranger10700\nNevahlif06\n\nAdditional art provided by:\nnononick\nDimava\nRubikium\n\nMy entire family\nEssi & Baster\n\n\\\\('_' )\nMade by Nagshell");
 		winCheck = false;
 	}
 }
